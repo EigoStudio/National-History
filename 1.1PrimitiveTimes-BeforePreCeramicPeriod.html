@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>国史 完全独学教材：【英語版フルアップデート版】</title>
+    <style>
+        :root { --main: #5d4037; --sub: #8d6e63; --bg: #fdfaf5; --text: #333; }
+        body { font-family: "Hiragino Mincho ProN", serif; line-height: 2.2; background: var(--bg); color: var(--text); max-width: 900px; margin: 0 auto; padding: 20px; }
+        h1 { text-align: center; color: var(--main); border-bottom: 3px double var(--main); padding-bottom: 10px; }
+        .tab-menu { display: flex; background: #e0dcd5; padding: 10px; border-radius: 12px; margin-bottom: 20px; flex-wrap: wrap; gap: 5px; }
+        .tab-btn { padding: 12px 10px; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; background: #fdfaf5; color: var(--main); transition: 0.3s; flex: 1; min-width: 140px; }
+        .tab-btn.active { background: var(--main); color: white; }
+        .content-area { display: none; background: white; padding: 30px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); min-height: 500px; }
+        .content-area.active { display: block; }
+        .text-box { background: #fafafa; padding: 20px; border: 1px solid #ddd; border-left: 6px solid var(--sub); border-radius: 8px; margin: 15px 0; font-size: 1.1em; white-space: pre-wrap; }
+        .controls { text-align: center; margin-bottom: 20px; }
+        button.action-btn { padding: 10px 20px; border-radius: 20px; border: none; cursor: pointer; font-weight: bold; margin: 5px; }
+        .btn-play { background: var(--sub); color: white; }
+        .btn-stop { background: #b71c1c; color: white; }
+        .quiz-item { border-bottom: 2px solid #eee; padding: 20px 0; }
+        .option { display: block; width: 100%; text-align: left; padding: 10px; margin: 5px 0; border: 1px solid #ccc; border-radius: 8px; background: #fff; cursor: pointer; }
+        .explanation { display: none; padding: 15px; margin-top: 10px; border-radius: 8px; background: #e3f2fd; font-size: 0.9em; }
+        .correct { background: #dcedc8 !important; border-color: #8bc34a; }
+        .incorrect { background: #ffcdd2 !important; border-color: #ef5350; }
+        h3 { background: #f0ede9; padding: 5px 10px; border-left: 5px solid var(--main); font-size: 1.1em; margin-top: 30px; }
+    </style>
+</head>
+<body>
+
+<h1>第一章 原始：1. 先土器時代以前</h1>
+
+<div class="tab-menu">
+    <button class="tab-btn active" onclick="openTab(event, 'part1')">パート1：日本語全文音読</button>
+    <button class="tab-btn" onclick="openTab(event, 'part2')">パート2：英語全文音読</button>
+    <button class="tab-btn" onclick="initQuiz('jp')">パート3：日本語テスト</button>
+    <button class="tab-btn" onclick="initQuiz('en')">パート4：English Quiz</button>
+</div>
+
+<div id="part1" class="content-area active">
+    <div class="controls"><button class="action-btn btn-stop" onclick="stopSpeech()">音読停止</button></div>
+
+    <h3>1.（イ）日本列島の誕生 ①記紀</h3>
+    <div class="text-box" id="jp-1">【課題】『古事記』は日本列島誕生をどのように記しているのだろう。
+今から約一三〇〇年前の奈良時代、第四十代天武天皇の命令によって編纂された二つの書物が完成しました。『古事記』と『日本書紀』です。両方を合わせて記紀といいます。『古事記』は日本の神話などの伝承と歴史を伝えるために編纂されたと考えられています。また『日本書紀』は日本の歴史を伝えるために編纂されたと考えられています。
+『古事記』は今に伝わる書物のなかでは日本最古で、そこには、日本列島誕生の神話や日本建国の物語が書かれています。『古事記』は、宇宙空間に最初に出現した神々の末っ子の伊邪那岐神と伊邪那美神が、日本の島々を生んだ「国生み神話」を伝えています。</div>
+    <button class="action-btn btn-play" onclick="speak('jp-1', 'ja-JP')">1.を聴く</button>
+
+    <h3>2.（イ）②宇宙の起源</h3>
+    <div class="text-box" id="jp-2">さて、宇宙と世界がどのようにできたかについては、いろいろな考え方があります。キリスト教やユダヤ教の聖典である『旧約聖書』の創世記は、神が五日と半日で宇宙と世界を創ったと伝えています。イスラム教の聖典である『コーラン』は、アラー（アラビア語で「神」を意味する）がすべてを創造したと伝え、また仏教は、宇宙には始まりも終わりもなく生と滅を繰り返しているという「無始無終」を説いています。他方、現代科学の知識によると、地球は約四十六億年前にガス体の凝集、あるいはガス体が凝集してできた物質が集合してできたことが分かっています。</div>
+    <button class="action-btn btn-play" onclick="speak('jp-2', 'ja-JP')">2.を聴く</button>
+
+    <h3>3.【文献資料】国生み神話 ①別天神</h3>
+    <div class="text-box" id="jp-3">【文献資料】『古事記』国生み神話：この世の初めに高天原に成った神は、天之御中主神でした。しかし、この神はすぐに姿をお隠しになりました。その後、まもなく高御産巣日神と神産巣日神が成りましたが、同じようにすぐに姿をお隠しになりました。このとき、大地はまだ若く、水に浮く脂のようで、海月のたように漂っていて、しっかりと固まっていませんでした。ところが、葦の芽のように伸びてきたものから、宇摩志阿斯訶備比古遅神と天之常立神が成り、また姿をお隠しになりました。これまでに成った五柱の神は、別天神と申し上げます。</div>
+    <button class="action-btn btn-play" onclick="speak('jp-3', 'ja-JP')">3.を聴く</button>
+
+    <h3>4.【文献資料】②淤能碁呂島と大八島国</h3>
+    <div class="text-box" id="jp-4">その後、国之常立神と豊雲野神が成り、姿をお隠しになりました。宇比地邇神と妻の須比智邇神を始め、五対の神が成り、最後に成ったのが伊邪那岐神と妻の伊邪那美神です。神々は、伊邪那岐神と伊邪那美神に「この漂っている国を固めて治めなさい」と命ぜられました。二柱の神は、天の浮橋から海に矛を下ろし、海水を「こおろ、こおろ」と掻き鳴らして矛を引き上げました。すると、塩が固まって淤能碁呂島ができました。夫婦となると、次々と島が生まれました。一番初めに生まれた島は、淡路島、続けて四国、隠岐諸島、九州、壱岐島、対馬、佐渡島、そして本州が生まれました。我が国のことを大八島国というのです。</div>
+    <button class="action-btn btn-play" onclick="speak('jp-4', 'ja-JP')">4.を聴く</button>
+
+    <h3>5.（ロ）人類の起源 ①未解明の起源と進化論</h3>
+    <div class="text-box" id="jp-5">【課題】人類はいつどこで生まれ、世界に広がっていったのだろう。
+人類がどのように誕生したのか、実はまだよく分かっていません。これも宗教によって考え方は異なります。『旧約聖書』は神が自らの姿に似せて人を創造したと記し、『コーラン』もアラーが人間を創造したと記しています。他方、仏教では人は輪廻転生、つまり生まれ変わりを繰り返していると説き、『古事記』にも人の起源については記述がありません。現代科学では、人間は猿から進化したという進化論が主張されています。かつては猿人から原人、旧人、さらに新人（現生人類）に進化したと考えられていました。これを単一種仮説といいます。</div>
+    <button class="action-btn btn-play" onclick="speak('jp-5', 'ja-JP')">5.を聴く</button>
+
+    <h3>6.（ロ）②進化論に対する異論（重要箇所）</h3>
+    <div class="text-box" id="jp-6">ところで、現代科学でも進化論に対する異論はあります。たとえば、猿人と原人の間で脳の容量をはじめ、多くの点で大きな差があるにもかかわらず、理論値よりもだいぶ早い段階で原人が出現していることなどから、猿人が進化したのが原人であるとは認められないという有力な反論があります。この立場の主張として、日本の分子生物学者の村上和雄の次の主張が挙げられます。人類の存在は進化論では十分に説明できず、もし最初の人がいたとしても、その遺伝子を書いたのは人ではないことは確実であるとし、その存在を「サムシング・グレート（何か偉大な存在）」と述べました。人の起源についてはまだ分からないことが多く、進化論は日本では広く支持されていますが、欧米やイスラム諸国では根強い批判もあります。</div>
+    <button class="action-btn btn-play" onclick="speak('jp-6', 'ja-JP')">6.を聴く</button>
+
+    <h3>7.（ロ）③アフリカ起源説と氷河時代</h3>
+    <div class="text-box" id="jp-7">考古学と分子生物学の発達により、学説は大幅に修正されました。現在では人類の起源はアフリカにあり、ネアンデルタール人などは絶滅し、結局現生人類だけが残ったと考えられています。地球は約二六〇万年前から氷河時代に入っていました。氷河時代の氷期には海面が今より約一〇〇メートル低く、日本列島は大陸と陸続きになることがありました。この時代に大陸からナウマンゾウ、マンモス、大角鹿などの大型動物が渡ってきて、そのような動物を追って日本に来た人たちがいたと考えられます。</div>
+    <button class="action-btn btn-play" onclick="speak('jp-7', 'ja-JP')">7.を聴く</button>
+
+    <h3>8.（ロ）④原日本人の形成</h3>
+    <div class="text-box" id="jp-8">それ以前から日本人がいたかは、まだよく分かっていません。しかし、沖縄から北海道にかけての広い地域の縄文遺跡からは、現代日本人とほぼ同じ特徴の人骨が出土しているため、遅くとも縄文時代までには原日本人が形成されていたと考えられています。一万一〇〇〇年ほど前には、最後の氷期が終わり、海面が上昇して日本は大陸と隔てられて列島になりました。それ以降は、大陸や南方から丸木舟に乗って日本に渡ってきた人たちもいたと考えられます。</div>
+    <button class="action-btn btn-play" onclick="speak('jp-8', 'ja-JP')">8.を聴く</button>
+
+    <h3>9.（ハ）日本の磨製石器は世界最古級 ①岩宿遺跡</h3>
+    <div class="text-box" id="jp-9">【課題】相澤忠弘が岩宿遺跡で発見した石器は、どのような石器だったのだろう。
+昭和二十一年（一九四六）にアマチュア研究家の相沢忠洋が、岩宿遺跡（群馬県）の関東ローム層の中から黒曜石でできた打製石器を掘り出し、我が国の考古学上の大発見となりました。それまでは日本には先土器文化はないものと考えられていましたが、岩宿遺跡から石器が出土したことで、日本にも先土器文化があったことが確認されたのです。日本では磨製石器の使用開始が早く、出土量が多いという特徴があります。</div>
+    <button class="action-btn btn-play" onclick="speak('jp-9', 'ja-JP')">9.を聴く</button>
+
+    <h3>10.（ハ）②局部磨製石斧と暮らし</h3>
+    <div class="text-box" id="jp-10">日本各地で発見された初期の局部磨製石斧は、約三万五〇〇〇年前のもので、当時世界最古でした。現状で日本最古は約三万八〇〇〇年前です。石斧は樹木を伐採するのに用いられました。この時代の人たちは一〇人程度の集団で簡単な小屋や洞窟などで生活し、防寒のために毛皮製の服を着ていました。火を使い、遠隔地との交流も盛んでした。人びとは丸木舟で盛んに島じまを行き来しており、神津島の黒曜石が各地で発見されているのは、当時の航海術が極めて高かったことを示しています。当時日本に住んでいた先土器時代人は、現在の日本人の先祖です。</div>
+    <button class="action-btn btn-play" onclick="speak('jp-10', 'ja-JP')">10.を聴く</button>
+
+    <h3>11.【コラム】世界最古の磨製石器議論 ①</h3>
+    <div class="text-box" id="jp-11">オーストラリアのマジェドベベ遺跡から出土した石器の年代は、六万五〇〇〇年前と示されていますが、学界では疑問が提示されています。砂層は安定しておらず、シロアリの穴掘りや豪雨で石器が下の層に沈めば、実際より古いものと特定されてしまう可能性があるからです。それに対し日本の初期の磨製石器は、安定した遺跡立地から出土しています。貫ノ木遺跡（三万八〇〇〇年前）をはじめ、三万七〇〇〇年前前後の出土例が全国八一カ所に上り、信頼性は極めて高いといえます。</div>
+    <button class="action-btn btn-play" onclick="speak('jp-11', 'ja-JP')">11.を聴く</button>
+
+    <h3>12.【コラム】②世界・東アジアとの比較詳報</h3>
+    <div class="text-box" id="jp-12">世界で一般的に磨製石器が一般化するのは約一万年前です。オーストラリア中部が約二万六〇〇〇年前、シベリアが約二万二〇〇〇年前と、日本よりだいぶ遅れます。東アジアでも、中国が約一万五〇〇〇年前、朝鮮半島が約一万年前ですから、日本（約三万八〇〇〇年前）が著しく先行しています。平成二十八年に沖縄のサキタリ洞では約二万三〇〇〇年前の世界最古級の釣り針が発見されました。世界では農耕や牧畜と同時に磨製石器が始まりますが、日本では磨製石器の使用が著しく先行したのです。</div>
+    <button class="action-btn btn-play" onclick="speak('jp-12', 'ja-JP')">12.を聴く</button>
+</div>
+
+<div id="part2" class="content-area">
+    <div class="controls"><button class="action-btn btn-stop" onclick="stopSpeech()">Stop Reading</button></div>
+    <h2>English Translation (Complete Full Text)</h2>
+
+    <h3>1. (A) Birth of the Japanese Archipelago - Part 1</h3>
+    <div class="text-box" id="en-1">[Task] How does the "Kojiki" describe the birth of the Japanese archipelago?
+About 1,300 years ago, during the Nara period, two books were completed by order of Emperor Tenmu: the "Kojiki" and the "Nihon Shoki." Together, they are known as the "Kiki." The "Kojiki" is believed to have been compiled to pass down traditions such as Japanese mythology and history. The "Nihon Shoki" is also thought to have been compiled to record Japanese history.
+The "Kojiki" is the oldest surviving book in Japan, and it contains the myth of the birth of the Japanese archipelago and the story of the nation's founding. It passes down the "Kuniumi Mythology," where the youngest deities to appear in space, Izanagi-no-kami and Izanami-no-kami, gave birth to the islands of Japan.</div>
+    <button class="action-btn btn-play" onclick="speak('en-1', 'en-US')">Read 1</button>
+
+    <h3>2. (A) Birth of the Japanese Archipelago - Part 2</h3>
+    <div class="text-box" id="en-2">Now, there are various perspectives on how the universe and the world were formed. Genesis in the "Old Testament," the sacred text of Christianity and Judaism, tells that God created the universe and the world in five and a half days. The "Quran," the sacred text of Islam, teaches that Allah created everything, while Buddhism teaches "Mushi-mushu," the cycle of life and destruction without beginning or end. On the other hand, modern scientific knowledge states that the Earth was formed about 4.6 billion years ago through the condensation of gases. We can understand the differences in values between the Japanese people of that time and those who compiled the "Old Testament." For example, while the "Old Testament" begins with God creating the universe, the "Kojiki" does not record the origin of the universe itself.</div>
+    <button class="action-btn btn-play" onclick="speak('en-2', 'en-US')">Read 2</button>
+
+    <h3>3. [Literature] Kuniumi Mythology - Part 1</h3>
+    <div class="text-box" id="en-3">[Literature] The "Kojiki" Kuniumi Mythology: In the beginning of this world, the deity who appeared in Takamano-hara was Ame-no-Minakanushi-no-kami. However, this deity soon hid. Shortly after, Takamimusubi-no-kami and Kamimusubi-no-kami appeared, but they also soon hid. At this time, the Earth was still young, like floating oil, drifting like a jellyfish (kurage), and not yet solidified. However, from something that grew like a reed sprout, deities such as Umashi-ashikabi-hikoji-no-kami and Ame-no-tokotachi-no-kami appeared and hid. The five deities born so far are called "Kotoamatsukami."</div>
+    <button class="action-btn btn-play" onclick="speak('en-3', 'en-US')">Read 3</button>
+
+    <h3>4. [Literature] Kuniumi Mythology - Part 2</h3>
+    <div class="text-box" id="en-4">After that, Kunino-tokotachi-no-kami and Toyokumono-no-kami appeared and hid. Starting with Uhijini-no-kami and his wife Suhijini-no-kami, five pairs of deities appeared, and finally, Izanagi-no-kami and his wife Izanami-no-kami were born. The deities commanded Izanagi and Izanami to "solidify and govern this drifting land." Standing on the Floating Bridge of Heaven (Amano-ukihashi), the two deities lowered a spear into the sea and stirred the water. When they pulled the spear up, the salt that dripped from the tip solidified to form an island. This was Onogoro Island. After becoming a couple, islands were born one after another: Awaji, Shikoku, Oki, Kyushu, Iki, Tsushima, Sado, and finally Honshu. This is why Japan is called "Oyashima-no-kuni."</div>
+    <button class="action-btn btn-play" onclick="speak('en-4', 'en-US')">Read 4</button>
+
+    <h3>5. (B) Origin of Humanity - Part 1</h3>
+    <div class="text-box" id="en-5">[Task] When and where was humanity born, and how did it spread across the world?
+The exact origin of humanity is still not fully understood. Perspectives vary by religion. Genesis in the "Old Testament" records that God created humans in His own image, and the "Quran" also records that Allah created humans. In contrast, Buddhism teaches reincarnation (Rinne-tensho) and does not speak of a single origin. The "Kojiki" also has no mention of human origins. Modern science proposes evolution from apes. It was once thought that apes who came down from trees became Homo erectus and then Homo sapiens. This is called the "single-species hypothesis."</div>
+    <button class="action-btn btn-play" onclick="speak('en-5', 'en-US')">Read 5</button>
+
+    <h3>6. (B) Origin of Humanity - Part 2 (Arguments Against Evolution)</h3>
+    <div class="text-box" id="en-6">However, there are arguments against evolution even in modern science. For example, despite the large gap in brain capacity and other features between early hominids and Homo erectus, Homo erectus appeared much earlier than theoretical values. Thus, there is a strong argument that it is impossible for apes to have evolved directly into Homo erectus. Molecular biologist Kazuo Murakami claimed that human existence cannot be fully explained by evolution, stating it is certain that humans did not write their own genetic code, calling the designer "Something Great." While evolution is widely supported in Japan, it faces strong criticism in Western and Islamic countries.</div>
+    <button class="action-btn btn-play" onclick="speak('en-6', 'en-US')">Read 6</button>
+
+    <h3>7. (B) Origin of Humanity - Part 3 (Ice Age and Migration)</h3>
+    <div class="text-box" id="en-7">With the development of archaeology and molecular biology, theories have been significantly revised. It is now believed humans originated in Africa, and only Homo sapiens survived. From about 2.6 million years ago, the Earth entered an Ice Age. During glacial periods, sea levels were about 100 meters lower, and Japan was often connected to the continent. Large animals like Naumann elephants, mammoths, and giant deer (Ootsunoshika) crossed over, followed by humans tens of thousands of years ago. Whether Japanese people existed before then is not yet known. However, human remains found in Jomon sites from Okinawa to Hokkaido show characteristics almost identical to modern Japanese, suggesting "Proto-Japanese" were formed by the Jomon period.</div>
+    <button class="action-btn btn-play" onclick="speak('en-7', 'en-US')">Read 7</button>
+
+    <h3>8. (C) Japan's Early Advanced Stone Culture - Part 1</h3>
+    <div class="text-box" id="en-8">[Task] What kind of stone tools did Tadahiro Aizawa discover at the Iwajuku site?
+In 1946, amateur researcher Tadahiro Aizawa discovered chipped stone tools made of obsidian in the Kanto Loam layer at the Iwajuku site, which became a major discovery in Japanese archaeology. Before this, it was believed that Japan had no pre-ceramic culture. However, the discovery proved that a pre-ceramic culture did exist in Japan. While the world usually shifted to ground stone tools much later, Japan is characterized by the very early appearance and large quantity of ground stone tools.</div>
+    <button class="action-btn btn-play" onclick="speak('en-8', 'en-US')">Read 8</button>
+
+    <h3>9. (C) Japan's Early Advanced Stone Culture - Part 2</h3>
+    <div class="text-box" id="en-9">Early ground stone tools found in Japan date back 35,000 years, and currently, the oldest is 38,000 years old, which was considered the oldest in the world. Stone axes (sekifu) were used to cut trees. People lived in groups of about 10 in simple huts or caves, wearing fur and using fire. They also had active trade. The discovery of obsidian from Kozushima across various regions shows advanced seafaring skills with canoes (marukibune). These pre-ceramic people are the ancestors of modern Japanese. This means the pinnacle of human technology at that time was located in the Japanese archipelago.</div>
+    <button class="action-btn btn-play" onclick="speak('en-9', 'en-US')">Read 9</button>
+
+    <h3>10. [Column] Japan or Australia?</h3>
+    <div class="text-box" id="en-10">Australia's Madjedbebe site claims tools from 65,000 years ago, but scientists doubt this due to soil instability; termites or rain could have moved tools to older layers. In contrast, Japan's tools from 38,000 years ago are found in stable geological layers at 81 sites across the country. Reliable data from sites like Kannoki prove a rich stone culture developed here. Ground stone tools appeared much later elsewhere: China (15,000 yrs ago), Siberia (22,000 yrs ago), and Korea (10,000 yrs ago). Japan was significantly ahead of its neighbors. In 2016, a fishing hook from 23,000 years ago was discovered in Okinawa. While ground stone tools usually appeared alongside farming in the world, Japan adopted them much earlier.</div>
+    <button class="action-btn btn-play" onclick="speak('en-10', 'en-US')">Read 10</button>
+</div>
+
+<div id="part3" class="content-area">
+    <div id="quiz-jp-container"></div>
+</div>
+
+<div id="part4" class="content-area">
+    <div id="quiz-en-container"></div>
+</div>
+
+<script>
+    const synth = window.speechSynthesis;
+
+    function openTab(evt, tabId) {
+        stopSpeech();
+        const areas = document.getElementsByClassName("content-area");
+        for (let i = 0; i < areas.length; i++) areas[i].classList.remove("active");
+        const btns = document.getElementsByClassName("tab-btn");
+        for (let i = 0; i < btns.length; i++) btns[i].classList.remove("active");
+        document.getElementById(tabId).classList.add("active");
+        evt.currentTarget.classList.add("active");
+    }
+
+    function speak(id, lang) {
+        stopSpeech();
+        let text = document.getElementById(id).innerText;
+        
+        if(lang === 'ja-JP') {
+            text = text.replace(/古事記/g, 'こじき').replace(/日本書紀/g, 'にほんしょき').replace(/ガス体/g, 'ガスタイ')
+                       .replace(/生と滅/g, 'ショウとメツ').replace(/高天原/g, 'タカマノハラ').replace(/国生み/g, 'クニウミ')
+                       .replace(/五柱/g, 'イツハシラ').replace(/一柱/g, 'ヒトハシラ').replace(/二柱/g, 'フタハシラ')
+                       .replace(/輪廻転生/g, 'リンネテンショウ').replace(/天浮橋/g, 'アマノウキハシ')
+                       .replace(/淤能碁呂島/g, 'オノゴロシマ').replace(/壱岐島/g, 'イキノシマ').replace(/佐渡島/g, 'サドガシマ')
+                       .replace(/大八島国/g, 'オオヤシマノクニ').replace(/石斧/g, 'せきふ')
+                       .replace(/大角鹿/g, 'オオツノシカ').replace(/氷期/g, 'ヒョウキ').replace(/原日本人/g, 'ゲンニッポンジン')
+                       .replace(/貫ノ木/g, 'カンノキ').replace(/猿人/g, 'えんじん').replace(/原人/g, 'げんじん')
+                       .replace(/旧人/g, 'きゅうじん').replace(/新人/g, 'しんじん').replace(/現生人類/g, 'ゲンセイジンルイ');
+        }
+
+        const utter = new SpeechSynthesisUtterance(text);
+        utter.lang = lang;
+        
+        const voices = synth.getVoices();
+        if(lang === 'en-US') {
+            utter.voice = voices.find(v => (v.name.includes('Samantha') || v.name.includes('Google US English Female') || v.name.includes('Zira'))) || voices[0];
+            utter.rate = 0.8;
+            utter.pitch = 1.1;
+        } else {
+            utter.rate = 1.0;
+            utter.pitch = 1.0;
+        }
+        synth.speak(utter);
+    }
+
+    function stopSpeech() { synth.cancel(); }
+
+    const quizData = [
+        { q: "天武天皇の命令で編纂された、日本の島々の誕生神話を記す最古の書物は？", a: ["古事記", "万葉集", "日本霊異記", "源氏物語"], e: "奈良時代に完成した日本最古の歴史書です。" },
+        { q: "『古事記』と『日本書紀』を合わせて何と呼びますか？", a: ["記紀", "国史", "二書", "本紀"], e: "二つの頭文字をとった総称です。" },
+        { q: "国生み神話で、最後に日本の島々を生んだ夫婦の神様は？", a: ["伊邪那岐神・伊邪那美神", "天照大御神・スサノオ", "大国主神", "豊雲野神"], e: "この二柱が日本の国土を生んだとされます。" },
+        { q: "科学的に、地球は約何年前に誕生したとされていますか？", a: ["約46億年前", "約100億年前", "約700万年前", "約20万年前"], e: "ガスの凝集により誕生したと考えられています。" },
+        { q: "宇宙に始まりも終わりもないという仏教の概念は？", a: ["無始無終", "輪廻転生", "諸行無常", "因果応報"], e: "始まりのない無限のサイクルを指します。" },
+        { q: "村上和雄氏が進化論で説明できない生命の設計者を何と呼びましたか？", a: ["サムシング・グレート", "アラー", "創造主", "八百万の神"], e: "遺伝子を書いた存在として「何か偉大な存在」と表現されました。" },
+        { q: "約700万年前に出現した最初期の人類を何といいますか？", a: ["猿人", "原人", "旧人", "新人"], e: "アウストラロピテクスなどの段階です。" },
+        { q: "ホモ・サピエンス（現生人類）が出現したのは約何年前？", a: ["約20万年前", "約700万年前", "約46億年前", "約1万年前"], e: "アフリカで出現しました。" },
+        { q: "氷河時代の氷期、海面は現在より約何メートル低かった？", a: ["約100メートル", "約10メートル", "約500メートル", "不変"], e: "大陸と陸続きになる要因となりました。" },
+        { q: "1946年、岩宿遺跡で打製石器を発見した人物は？", a: ["相沢忠洋", "本居宣長", "伊能忠敬", "新井白石"], e: "アマチュア研究家による大発見です。" },
+        { q: "岩宿遺跡で見つかった石器は何という地層にありましたか？", a: ["関東ローム層", "シラス台地", "堆積岩層", "貝塚層"], e: "火山灰による赤土の層です。" },
+        { q: "氷河時代にあたる地質学上の呼び名を何といいますか？", a: ["更新世", "完新世", "中生代", "新生代"], e: "一万年前までの氷河期の呼び名です。" },
+        { q: "石を打ち砕いて作った、鋭い刃を持つ石器を何といいますか？", a: ["打製石器", "磨製石器", "細石器", "石包丁"], e: "旧石器時代の主要道具です。" },
+        { q: "日本列島の旧石器時代における、世界的な特徴は何ですか？", a: ["磨製石器の使用が非常に早い", "土器が世界で最も古い", "巨大な城を築いた", "文字を使用していた"], e: "3.8万年前から磨製石器があるのは驚異的です。" },
+        { q: "石器の材料として重宝された、鋭い刃になる黒い天然ガラスの岩石は？", a: ["黒曜石", "石灰岩", "大理石", "花崗岩"], e: "岩宿遺跡でも使用されていました。" },
+        { q: "現代日本人と同じ特徴を持つ「原日本人」が形成されたと考えられている時期は？", a: ["遅くとも縄文時代まで", "弥生時代以降", "明治時代", "旧石器時代初期"], e: "縄文遺跡の人骨研究から分かっています。" },
+        { q: "オーストラリアのマジェドベベ遺跡の年代が疑われる理由は？", a: ["シロアリ等が石器を移動させた可能性", "偽物だから", "海にあるから", "文字が変"], e: "砂層の不安定さが指摘されています。" },
+        { q: "日本で3.8万年前の磨製石器が出土した、長野県の遺跡は？", a: ["貫ノ木遺跡", "三内丸山遺跡", "吉野ヶ里遺跡", "板付遺跡"], e: "信州の安定した地層から発見されました。" },
+        { q: "日本の磨製石器が見つかった後期旧石器時代の遺跡数は？", a: ["81カ所", "1カ所", "10カ所", "1000カ所"], e: "全国的な広がりが証明されています。" },
+        { q: "沖縄のサキタリ洞で発見された世界最古級の道具は何ですか？", a: ["釣り針", "鉄剣", "銅鏡", "石包丁"], e: "2.3万年前の貝製釣り針です。" },
+        { q: "氷河時代に大陸から渡ってきた動物はナウマンゾウと何？", a: ["マンモス", "恐竜", "ラクダ", "ライオン"], e: "大型動物を追って人間も渡来しました。" },
+        { q: "仏教で、生死を繰り返す教えを何といいますか？", a: ["輪廻転生", "無始無終", "因果応報", "諸行無常"], e: "生まれ変わりの思想です。" },
+        { q: "『古事記』で最初に成った五柱の神々を何と呼びますか？", a: ["別天神", "国津神", "七代の神", "八百万"], e: "特別な最初の神々です。" },
+        { q: "更新世の次にくる、現在を含む地質学上の時代は？", a: ["完新世", "中生代", "石器時代", "縄文時代"], e: "一万年前から現在までです。" },
+        { q: "日本の磨製石器の使用開始は何年前？", a: ["約3.8万年前", "約1万年前", "約1.5万年前", "約5000年前"], e: "世界最古級の技術です。" },
+        { q: "旧石器時代の人々が着ていた防寒具は？", a: ["毛皮製の服", "シルク", "綿", "麻"], e: "動物の皮を利用しました。" },
+        { q: "相沢忠洋が岩宿遺跡で発見した石器の材質は？", a: ["黒曜石", "青銅", "鉄", "石灰"], e: "打製石器の素材でした。" },
+        { q: "日本列島における丸木舟による遠隔地交流の証拠として発見された石は？", a: ["神津島の黒曜石", "ダイヤモンド", "大理石", "水晶"], e: "高い航海術の証明です。" },
+        { q: "『古事記』の完成は何時代ですか？", a: ["奈良時代", "飛鳥時代", "平安時代", "江戸時代"], e: "天武天皇の発願です。" },
+        { q: "日本、中国、朝鮮半島で最も早く磨製石器を使ったのは？", a: ["日本", "中国", "朝鮮半島", "ほぼ同時"], e: "日本が著しく先行しています。" }
+    ];
+
+    function shuffle(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+    }
+
+    function initQuiz(lang) {
+        openTab(event, lang === 'jp' ? 'part3' : 'part4');
+        const container = document.getElementById(lang === 'jp' ? 'quiz-jp-container' : 'quiz-en-container');
+        container.innerHTML = `<h2>${lang === 'jp' ? '日本語テスト' : 'English History Quiz'}</h2>`;
+        
+        quizData.forEach((item, idx) => {
+            const div = document.createElement('div');
+            div.className = 'quiz-item';
+            
+            let qText = item.q;
+            let optArr = [...item.a];
+            let explanationText = item.e;
+
+            if(lang === 'en') {
+                const enQs = ["Which emperor ordered the Kojiki?", "Collective name for Kojiki and Nihon Shoki?", "The deities of the Kuniumi myth?", "Scientifically, Earth's age?", "Buddhist concept of beginningless universe?", "Murakami's term for the designer of DNA?", "Earliest human stage (7 million years ago)?", "When did modern humans appear?", "Ice Age sea level drop?", "Discoverer of Iwajuku site?", "Soil layer at Iwajuku?", "Geological name for Ice Age?", "Tools made by chipping stones?", "Unique feature of Japan's ground tools?", "Sharp glass-like rock for tools?", "Formative period of 'Proto-Japanese'?", "Why is Madjedbebe site age doubted?", "Location of early 38,000-year-old tools?", "Number of Japan's ground stone tool sites?", "Oldest tool in Sakitari Cave?", "Ice Age animal besides Naumann elephant?", "Buddhist term for reincarnation?", "First five deities in Kojiki?", "Epoch following Pleistocene?", "When did ground stone tools start in Japan?", "Paleolithic clothing?", "Material found at Iwajuku?", "Proof of early seafaring trade?", "Kojiki's completion era?", "First ground stone tool user in East Asia?"];
+                const enAs = [
+                    ["Kojiki", "Manyoshu", "Nihon Ryoiki", "Genji"], ["Kiki", "Kokusho", "Nisho", "Honki"], ["Izanagi and Izanami", "Amaterasu", "Susanoo", "Okuninushi"], ["4.6 billion yrs", "10 billion yrs", "7 million yrs", "200,000 yrs"], ["Mushi-mushu", "Reincarnation", "Anitya", "Karma"], ["Something Great", "Allah", "Creator", "Kami"], ["Early hominids", "Homo erectus", "Archaic humans", "Modern humans"], ["200,000 yrs ago", "7 million yrs ago", "4.6 billion yrs ago", "10,000 yrs ago"], ["100 meters", "10 meters", "500 meters", "No change"], ["Tadahiro Aizawa", "Norinaga Motoori", "Tadataka Ino", "Hakuseki Arai"], ["Kanto Loam", "Shirasu", "Bedrock", "Shell Mound"], ["Pleistocene", "Holocene", "Mesozoic", "Cenozoic"], ["Chipped stone tools", "Ground stone tools", "Microliths", "Stone knives"], ["Early usage", "Large size", "Golden material", "Pottery link"], ["Obsidian", "Limestone", "Marble", "Granite"], ["By Jomon period", "Yayoi period", "Meiji period", "Paleolithic"], ["Soil instability", "Fake items", "Underwater", "No writing"], ["Kannoki", "Itazuke", "Sannai", "Yoshinogari"], ["81 locations", "1 location", "10 locations", "1000 locations"], ["Fishing hook", "Iron sword", "Mirror", "Knife"], ["Mammoth", "Dinosaur", "Camel", "Lion"], ["Reincarnation", "Mushi-mushu", "Karma", "Anitya"], ["Kotoamatsukami", "Kunitsukami", "7 Generations", "8 Million"], ["Holocene", "Mesozoic", "Stone Age", "Jomon"], ["38,000 yrs ago", "10,000 yrs ago", "15,000 yrs ago", "5,000 yrs ago"], ["Fur clothing", "Silk", "Cotton", "Hemp"], ["Obsidian", "Bronze", "Iron", "Lime"], ["Obsidian trade", "Diamond", "Marble", "Crystal"], ["Nara period", "Asuka", "Heian", "Edo"], ["Japan", "China", "Korea", "Same time"]
+                ];
+                const enExps = [
+                    "Kojiki is Japan's oldest history book, completed in the Nara period.",
+                    "Kiki stands for 'Kojiki' and 'Nihon Shoki'.",
+                    "Izanagi and Izanami are the couple deities who gave birth to the islands.",
+                    "Modern science estimates Earth formed about 4.6 billion years ago.",
+                    "Buddhism teaches a beginningless and endless cycle of the universe.",
+                    "He used this term to describe the intelligent designer of the genetic code.",
+                    "Australopithecus belongs to this earliest human stage.",
+                    "Homo sapiens emerged in Africa around this time.",
+                    "The lower sea level allowed land bridges to form.",
+                    "An amateur researcher whose discovery rewrote Japanese archaeology.",
+                    "It is a red volcanic ash layer found in the Kanto region.",
+                    "The Pleistocene epoch lasted from 2.6 million to 10,000 years ago.",
+                    "These tools are characteristic of the Paleolithic Age.",
+                    "Ground stone tools appeared in Japan as early as 38,000 years ago.",
+                    "Obsidian is a natural glass used for very sharp edges.",
+                    "Remains found across Japan suggest proto-Japanese existed by this time.",
+                    "Soil instability due to termites or rain might have shifted artifacts.",
+                    "Stabilized geological layers in Nagano provide reliable data.",
+                    "Over 80 sites across Japan show widespread usage of these tools.",
+                    "A world-class shell fishing hook found in Okinawa.",
+                    "Mammoths and Naumann elephants crossed to Japan via land bridges.",
+                    "This refers to the Buddhist belief in the cycle of rebirth.",
+                    "These were special deities who appeared at the start of the universe.",
+                    "The current geological epoch, following the Ice Age.",
+                    "Japan was exceptionally early in using this advanced technology.",
+                    "People wore fur to survive the cold Ice Age climate.",
+                    "Tadahiro Aizawa found tools made of chipped obsidian.",
+                    "Obsidian from Kozushima was traded to Honshu via sea travel.",
+                    "Completed in the early 8th century by order of Emperor Tenmu.",
+                    "Japan started using ground stone tools far ahead of China and Korea."
+                ];
+                qText = enQs[idx];
+                optArr = enAs[idx];
+                explanationText = enExps[idx];
+            }
+
+            div.innerHTML = `<p><strong>Q${idx + 1}: ${qText}</strong></p>`;
+            let options = optArr.map((text, i) => ({ text, isCorrect: i === 0 }));
+            shuffle(options);
+
+            options.forEach((opt) => {
+                const btn = document.createElement('button');
+                btn.className = 'option';
+                btn.innerText = opt.text;
+                btn.onclick = () => {
+                    const exp = div.querySelector('.explanation');
+                    exp.style.display = 'block';
+                    if(opt.isCorrect) { btn.classList.add('correct'); exp.innerText = (lang === 'jp' ? '正解！ ' : 'Correct! ') + explanationText; }
+                    else { btn.classList.add('incorrect'); exp.innerText = (lang === 'jp' ? '不正解... ' : 'Incorrect... ') + explanationText; }
+                };
+                div.appendChild(btn);
+            });
+            const expDiv = document.createElement('div');
+            expDiv.className = 'explanation';
+            div.appendChild(expDiv);
+            container.appendChild(div);
+        });
+    }
+
+    window.onload = () => { synth.getVoices(); };
+</script>
+</body>
+</html>
