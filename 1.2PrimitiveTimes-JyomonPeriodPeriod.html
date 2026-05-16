@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>国史独学教材：1.2 縄文時代</title>
+    <style>
+        :root { --main: #5d4037; --sub: #8d6e63; --bg: #fdfaf5; --text: #333; }
+        body { font-family: "Hiragino Mincho ProN", serif; line-height: 2.2; background: var(--bg); color: var(--text); max-width: 900px; margin: 0 auto; padding: 20px; }
+        h1 { text-align: center; color: var(--main); border-bottom: 3px double var(--main); padding-bottom: 10px; }
+        .tab-menu { display: flex; background: #e0dcd5; padding: 10px; border-radius: 12px; margin-bottom: 20px; flex-wrap: wrap; gap: 5px; position: sticky; top: 0; z-index: 1000; }
+        .tab-btn { padding: 12px 10px; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; background: #fdfaf5; color: var(--main); transition: 0.3s; flex: 1; min-width: 140px; }
+        .tab-btn.active { background: var(--main); color: white; }
+        .content-area { display: none; background: white; padding: 30px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); min-height: 500px; }
+        .content-area.active { display: block; }
+        .text-box { background: #fafafa; padding: 20px; border: 1px solid #ddd; border-left: 6px solid var(--sub); border-radius: 8px; margin: 15px 0; font-size: 1.1em; white-space: pre-wrap; }
+        .audio-player { margin-bottom: 20px; background: #eeebe6; padding: 10px; border-radius: 8px; border-left: 5px solid var(--main); }
+        .quiz-item { border-bottom: 2px solid #eee; padding: 20px 0; }
+        .option { display: block; width: 100%; text-align: left; padding: 12px; margin: 8px 0; border: 1px solid #ccc; border-radius: 5px; background: #fff; cursor: pointer; font-size: 1rem; }
+        .explanation { display: none; padding: 15px; margin-top: 10px; border-radius: 8px; background: #e3f2fd; font-size: 0.95em; line-height: 1.6; }
+        .correct { background: #dcedc8 !important; border-color: #8bc34a; }
+        .incorrect { background: #ffcdd2 !important; border-color: #ef5350; }
+        h3 { background: #f0ede9; padding: 5px 10px; border-left: 5px solid var(--main); font-size: 1.15em; margin-top: 40px; }
+        .page-num { font-size: 0.8em; color: #888; float: right; }
+        .audio-label { font-size: 0.85rem; color: #6a0dad; font-weight: bold; margin-bottom: 5px; display: block; }
+    </style>
+</head>
+<body>
+
+
+<h1>第一章 原始：2. 縄文時代</h1>
+
+<div class="tab-menu">
+    <button class="tab-btn active" onclick="openTab(event, 'part1')">1. 和文全文（録音再生）</button>
+    <button class="tab-btn" onclick="openTab(event, 'part2')">2. 英文全文</button>
+    <button class="tab-btn" onclick="openQuizTab(event, 'jp')">3. 日本語テスト</button>
+    <button class="tab-btn" onclick="openQuizTab(event, 'en')">4. English Quiz</button>
+</div>
+
+<div id="part1" class="content-area active">
+    <h3>（イ）日本の縄文土器は世界最古級<span class="page-num">p.26-27</span></h3>
+    <div class="audio-player">
+        <span class="audio-label">🎧 Listen to the Audio</span>
+        <audio controls src="audio-1.1/A.m4a" style="width: 100%;"></audio>
+    </div>
+    <div class="text-box">【課題】日本列島ではいつから土器が使われたのだろう。
+
+日本では、土器が作られるようになったのを縄文時代の始まり、また、本格的な水田稲作の開始を弥生時代の始まり（縄文時代の終わり）と定義しています。
+　平成十年（一九九八）、青森県外ヶ浜町の民家の建て替え工事にあたり、旧蟹田町教育委員会が行った発掘調査で発見された土器が、世界の考古学の歴史を大きく塗り替えることになりました。
+　発見された土器は、すべて小さな破片で、模様はありませんでした。付着していた炭化物などを試料に行った放射性炭素年代測定法による検査により、出土した土器は、約一万六三〇〇年前の世界最古級の土器であることが分かったのです。この測定の結果、日本における土器の出現がこれまで考えられていた時期より約四〇〇〇年遡りました。その後、日本列島の広い範囲で、古い時代の土器が多数確認されました。たとえば、長崎県の福井洞窟の土器は約一万六〇〇〇年前、東京都の御殿山遺跡の土器は約一万六三〇〇年前、神奈川県の宮ケ瀬北原の土器は約一万五五〇〇年前、北海道の大正3遺跡の土器は約一万四五〇〇年前と見られています。福井洞窟と御殿山遺跡は、外ヶ浜町の遺跡とほとんど同時期であり、短期間のうちに北は北海道、西は九州にまで伝播したことが分かります。
+　この遺跡から出土した石鏃（石でできた矢尻）は世界で最古のものと見られています。また、土器の内側には焦げた炭化物が付着していたことから、この土器は煮炊きに使われていたことが分かっています。経験上、これは人類最古の調理の跡とされています。
+　この遺跡は大平山元Ⅰ遺跡という縄文時代草創期の遺跡で、現在は国の史跡に指定されています。
+　日本では、世界的に見てかなり早い段階で素焼きの土器に縄の模様をあしらった縄文土器が作られるようになり、それをもって縄文時代の始まりと定義していました。大平山元Ⅰ遺跡の土器には縄の模様はありませんでしたが、この土器の出現で、縄文時代の始まりが遡ったことになります。この時代の文化を縄文文化といいます。縄文時代は水田稲作が始まるころまで続きます。縄文土器は、黒褐色で、低温で焼き上げるため厚手でもろい特徴があり、火焔型土器のように美しく装飾されたものもあります（『日本美術図鑑・縄文時代』）。</div>
+
+    <h3>（ロ）氷期の終焉と縄文海進<span class="page-num">p.27-28</span></h3>
+    <div class="audio-player">
+        <span class="audio-label">🎧 Listen to the Audio</span>
+        <audio controls src="audio-1.1/B.m4a" style="width: 100%;"></audio>
+    </div>
+    <div class="text-box">【課題】気候の変化によって人々の生活はどのように変化したのだろう。
+
+今から約一万一〇〇〇年前、最後の氷期が終わり、世界は温暖な時代へと移行しました。温暖化により、植物の成長が早くなり、森林が増え、人々は木の実などの食料を確保しやすくなりました。また、氷が溶けて海面が上昇し、日本地域は大陸と分離されて再び日本列島が形成されました。
+　気候の変化によって、日本列島は現在と同じような、四季のある温暖湿潤な気候になり、多種多様な植物が育つ環境になりました。また、海面が上昇したため、日本列島には多くの入江が形成されました。これを縄文海進といいます。入江には魚介類が棲みつきやすく、しかもそれらを獲りやすい地形ですから、縄文人は豊かな海の幸の恵みを受けるようになります。日本沿岸は暖流と寒流がぶつかるため、もともと豊かな漁場でしたが、縄文海進で森と海が接近したため、森の養分が直接入江に流れ込むようになり、さらに豊かな漁場となりました。
+　温暖な時代の到来により、特に日本列島は、植物資源だけでなく、海産物も豊富に獲れるようになり、世界でも有数の豊かな土地になりました。現在でも日本食の文化は魚を中心としていますが、その起源は縄文時代にあったのです。
+　この時代になると、日本列島から大型動物は姿を消し、猪や鹿などの機敏な動きをする中小の動物が増えました。それを捕らえるために鏃をつけた弓矢が用いられ、落とし穴も作られるようになりました。
+　縄文時代の日本列島は豊かな環境に恵まれたため、人々は定住するようになりましたが、農耕や牧畜はあまり発達しませんでした。北部九州で稲作が始まるのは、縄文時代の晩期を待たなくてはなりません。
+　縄文時代は約一万三〇〇〇年以上続きました。文化の芽生え（磨製石器の出現）を日本の歴史の始まりと考えるなら、日本の歴史の九割以上が先土器時代と縄文時代だったことになります。</div>
+
+    <h3>【注釈 1, 2, 3, 4】<span class="page-num">p.26-29</span></h3>
+    <div class="audio-player">
+        <span class="audio-label">🎧 Listen to the Audio</span>
+        <audio controls src="audio-1.1/foot1-4.m4a" style="width: 100%;"></audio>
+    </div>
+    <div class="text-box">注① 土器
+粘土をこねて成型し、乾燥させ、焼き上げて作った容器。
+
+注② 放射性炭素年代測定法
+年代を測定する方法の1つ。大気や海水にはわずかな量の「炭素14」という放射性同位体が含まれている。炭素14は生物の体内にも取り込まれるが、生物が死に外界からの炭素14の供給が断たれると、炭素14は5,730年ごとに半減する性質を持つため、その存在量が経過時間とともに一定の割合で減少していく。したがって、動植物の遺物に含まれる炭素14を測定すれば、その生存年代を特定することができる。
+
+注③
+1つの文化がこれほど長く続いたのは、世界の歴史で他に例がない。縄文時代は豊かで安定した時代だったため、新しい文化を取り入れる必要がなかったものと思われる。中国大陸で農耕が盛んになっても、日本列島の縄文人は、交流があるにもかかわらず、積極的に農耕を取り入れることはなかった。縄文文化は「農耕しない遅れた文化」なのではなく、自然と共生しながら採取経済を発展させた、成熟した文化だったといえる。
+
+注④ 木の伐採と木材の加工
+竪穴式住居などに用いる木材を伐採するには、硬い石で作った磨製石斧が用いられた。また、木材を加工するには、木材に細かい傷を付けて石斧で削る手法や、木材を水に濡らして、あるいは焦がして柔らかくしてから石斧で削る手法などが用いられた。</div>
+
+    <h3>（ハ）縄文文化と縄文人の生活<span class="page-num">p.28-31</span></h3>
+    <div class="audio-player">
+        <span class="audio-label">🎧 Listen to the Audio</span>
+        <audio controls src="audio-1.1/C.m4a" style="width: 100%;"></audio>
+    </div>
+    <div class="text-box">【課題】縄文人の生活や信仰にはどのような特徴があったのだろう。
+
+アメリカ人の動物学者エドワード・S・モースが、明治十年（一八七七）に鉄道で横浜から新橋に向かう途中、大森駅近くの崖に貝殻が積み重なっているのを発見し、後日、政府の許可を受けて発掘調査を行いました。それは縄文時代後期から末期ごろの貝塚でした。
+　貝塚とは食べ残しやごみなどを捨てた遺跡で、貝殻、動物や魚の骨、土器の破片、土偶、石斧、石鏃、骨角器、人骨片などが発見されています。後に大森貝塚と呼ばれるようになります。このとき出土した土器に縄の模様が付いていたため、縄文土器と名づけられました。モースの発掘は日本の考古学の発祥とされています。大森貝塚は後に国の史跡に指定され、モースの発掘した遺物は、国の重要文化財に指定されています。
+　全国の縄文時代の遺跡を調査した結果, 縄文人は打製石器、磨製石器、弓矢、骨角器などを使って狩猟、漁労、採集により食料を確保していたことが分かりました。骨角器とは、動物の骨格から作られた道具です。日本では鹿、猪、イルカなどの骨から作った釣針や銛などが、縄文時代の遺構から発見されています。人々は胡桃やドングリなどの木の実や山芋などの根菜を主食としていました。計画的に稗、栗、蕎麦、豆類、荏胡麻や瓢箪などの植物を栽培していたことも分かっています。土器が使われるようになると、煮る、蒸す、炊くといった調理法が加わっただけでなく、汁ものの調理が可能になり、木の実などのあく抜きもできるようになって、効率よく栄養を摂取できるようになりました。また、土器で飲飲食物を貯蔵することも可能になりました。酒を醸すようになったのもこのときです。
+　人々は地面に掘った穴に柱を立てて、草で屋根を葺いた竪穴式住居に住み、集落を作るようになりました。丸太をくりぬいた丸木舟で沖に出て漁をし、遠方へも航海していました。青森県の三内丸山遺跡からは、大規模な集落の跡が発見されています。
+　縄文人は、あらゆるものに精霊が宿ると考えていました。女性をかたどった土偶（土製の人形）や男性器を表現したと思われる石棒は、子孫繁栄を願う祭祀に用いられたと考えられています（『日本美術図鑑・縄文時代』）。自然との調和を重んじた縄文人の自然観は、現在の日本人の価値観にも色濃く残っています。また、縄文人の風習の一つに屈葬や抜歯があります。屈葬は、手足を折り曲げて葬ることで、死者の霊が災いを及ぼすのを防ぐため、また抜歯は、特定の永久歯を抜く習慣で、成人式の意味を持つものと考えられています。
+　特別大きい住居が見られないこと、共同墓地が営まれたこと、震災や副葬品がないことなどから、縄文時代には人々の間に貧富の差や身分の上下はなかったと考えられています。
+　日本列島に大規模な移住があったことは想定できないので、先土器時代人が縄文人の先祖で、また、骨格が現代日本人に似ていることから、縄文人は日本人の先祖と考えられています。</div>
+
+    <h3>【コラム】縄文時代の大規模集落・三内丸山遺跡<span class="page-num">p.21</span></h3>
+    <div class="audio-player">
+        <span class="audio-label">🎧 Listen to the Audio</span>
+        <audio controls src="audio-1.1/col1.m4a" style="width: 100%;"></audio>
+    </div>
+    <div class="text-box">三内丸山遺跡は, 青森県青森市にある縄文時代の大規模集落跡です。平成四年（一九九二）に発掘が始まりました。この遺跡の発掘により、これまで考えられていた縄文人像が大きく変化することになりました。
+従来、縄文人は大きな集落を作らず、食物の栽培はしていなかったと考えられていました。ところが、三内丸山の縄文人は、栗の木を計画的に植林し、下草を刈るなどして、念入りに管理していたことが分かったのです。また、直径と深さがともに二メートルの六つの巨大な柱の跡が発見されたことから、かなり大規模な建物が存在し、高度な土木建築技術があったことを思わせます。
+三内丸山遺跡は、縄文時代前期から中期にかけ、五九〇〇年前ごろから四三〇〇年前ごろまで、およそ一六〇〇年間営まれました。江戸（東京）は徳川家康が城を築いてから約四〇〇年、京都は桓武天皇が遷都してから約一二〇〇年ですから、それと比べると、太古の昔に一六〇〇年もの間集落が営まれたのは、すごいことです。住居の跡は三〇〇棟以上にのぼると推定されていて、同時期に三〇〇〇棟以上の住居が存在していたわけではないにせよ、その規模は、これまでの縄文遺跡の常識を破るものでした。
+遠方との交易も盛んだったようです。糸魚川の翡翠、岩手の琥珀、秋田のアスファルトなどが出土しています。また、遺跡には大規模な墓地が造営され、故人を丁重に葬る文化があったことが分かります。
+三内丸山遺跡の発掘の結果、縄文人は採取経済を基礎とする社会としては、稀に見る高度な社会を構築していたことが分かりました。</div>
+
+    <h3>（二）世界の文明と日本<span class="page-num">p.31-33</span></h3>
+    <div class="audio-player">
+        <span class="audio-label">🎧 Listen to the Audio</span>
+        <audio controls src="audio-1.1/D.m4a" style="width: 100%;"></audio>
+    </div>
+    <div class="text-box">【課題】世界の文明はどこで起こり、どのような特徴があるのだろう。日本と世界の文明にはどのような共通点があるのだろう。また、お互いにどのように影響し合いながら形成されていったのだろう。
+
+日本で出土した世界最古級の土器以外にも、同じような古い時期の土器として、ロシアと中国の例があります。ロシアのグロマトゥーハ遺跡で発見された土器は約一万五〇〇0年前のものです。また、中国の湖南省の洞窟で発見された土器が約一万八〇〇〇年前という報告もあります。いずれにしても、東アジアに最古級の土器が集中しているといえます。ところが、南アジア、西アジア、アフリカ、ヨーロッパなどでは、日本に八〇〇〇年ほど遅れて土器を作るようになりました。少なくとも、土器に関しては、日本を含む東アジアが極端に古いといえます。
+　ところで、中国湖南省の約一万八〇〇〇年前という土器は、日本の考古学者が調査を要請しても拒否され、しかも土器自体を調べたのではない、土器の上下の地層の動物骨などから割り出したもので、約三〇〇〇年間の開きがあり、上限が一万八〇〇〇年ということでしかありません。その後、中国は江西省で約二万年前の土器が出土したと発表しましたが、付着物を測定せず地層から割り出した、信憑性の低いものでした。
+　農耕を開始して、都市を形成し、文字を用いて、広範囲な交易をしていることなどをもって文明の成立と考えられてきました。どの文明が世界の文明の祖であるかは研究の途上にあり、まだ定説はありません。
+　かつて、エジプト文明、メソポタミア文明、インダス文明、中国文明を世界四大文明と呼び、世界中の文明はすべてこれら四大文明の亜流であると考えられていた時期がありました。しかし、考古学の研究が進むと、同じ条件を満たす例が各地に発見され、四大文明の技術が世界の文明の祖であるという考え方は、現在では否定されています。
+　日本列島では本格的な食料生産と都市形成の時期は遅れましたが、日本列島から最古級の磨製石器と最古級の土器が発見されていて、日本は独自の文化の起源を持っているといえます。アメリカを代表する国際政治学者であるサミュエル・ハンチントンは著書『文明の衝突』で、ほとんどの学者は日本を固有の文明と認識しているとして、五世紀以降の日本文化を「日本文明」と呼びました。日本列島は地理的に大陸から隔てられていたため、他の地域とは異なった特色ある文化を発展させていきますが、日本文化は他地域の文明と無関係に発展・形成されたわけではありません。日本列島の人々は、大陸や朝鮮半島から積極的に文化を受け容れ発展させ、また東アジアの多くの地域に文化的影響を与えました。日本文化は、特に中国の文明と相互に強い影響を与えながら発展していくことになります。
+　エジプト、メソポタミア、インダス、黄河・長江、メソアメリカ、アンデスをはじめとする地域では、日本列島より早い段階で農耕と牧畜が始まりました。大河の周辺地域では穀類中心、また山岳地帯のアンデスや、島嶼のパプアニューギニアではジャガイモなどの根菜類中心の農耕が行われました。
+　大陸では、世界的にも特に早い時期に農耕が始まっています。約一万二〇〇〇年前に、長江（揚子江）中流域で稲作を中心とした農耕が始まっていたことが確認されています。また、水田としては, 長江中下流域の約六四〇〇年前の水田の跡が最も古く、長江流域が稲作の起源であると考えられています。
+　その他、最古級の農耕としては、シリアのテル・アブ・フレイラ遺跡に約一万一〇〇〇年前のライムギの農耕の跡が、また、パプアニューギニアに約九〇〇〇年前の芋類を作るための灌漑施設の跡があります。
+　日本列島は豊かな温帯林に包まれ、周囲を海に囲まれた環境にあり、山海の幸に恵までした。このように、他の地域に比べて食料を得ることが容易だったため、日本では本格的な農耕を開始する時期が遅れたと考えられています。ところが、縄文時代晩期になると寒冷化により自然の実りが乏しくなりました。このような時期に縄文人も重い腰を上げて稲作に着手することになったと考えられています。食料事情が極度悪化すると幼い動植物まで捕獲するようになりますが、縄文時代晩期の貝塚に幼獣の個体が増える形跡はなく、また、そのころの縄文人の骨や歯に、成長が止まるような障害はほとんど観察されていません。縄文人は自然環境が変化するなか、余裕を持って農耕社会に移行していったことが分かります。その後、日本列島の人々が積極的に大陸の文化を取り込んでいくことは、「弥生時代」以降で詳しく述べます。</div>
+
+    <h3>【注釈 5, 6】<span class="page-num">p.32-33</span></h3>
+    <div class="audio-player">
+        <span class="audio-label">🎧 Listen to the Audio</span>
+        <audio controls src="audio-1.1/foot5-6.m4a" style="width: 100%;"></audio>
+    </div>
+    <div class="text-box">注⑤ 牧畜の始まり
+紀元前8000〜7000年ごろに西アジアで羊を家畜化したのが牧畜の始まりで、同様の時期に山羊、遅れて牛、また中央アジアの草原で馬、北アフリカから中央アジアにかけてはラクダ、東シベリアや北欧でトナカイなどが家畜化された。狩猟対象の群れに追随するうちに、群れの行動を管理する技術が発生したのが牧畜の起源と見られる。
+
+注⑥ 先史時代と歴史時代
+文字による歴史記録が存在せず、考古学や地質学などが主要な研究領域となる時代を先史時代、文字による歴史記録により歴史を研究することができる時代を歴史時代という。日本では、先土器時代から弥生時代までが先史時代で、大和時代以降が歴史時代とされる。</div>
+
+    <h3>（ホ）ユーラシア大陸の状況<span class="page-num">p.23-24</span></h3>
+    <div class="audio-player">
+        <span class="audio-label">🎧 Listen to the Audio</span>
+        <audio controls src="audio-1.1/E.m4a" style="width: 100%;"></audio>
+    </div>
+    <div class="text-box">【課題】世界の文明にはどのような特色があるのだろう。今の日本文化に影響を与えているものは何だろう。
+
+人々は安定した食料を生産することができるようになると、定住して都市を形成し、神殿を建て、やがて古代国家を作りました。貧富の格差が生じ、国を統率する王が出現しました。祭りや戦いに使う青銅器（銅と錫などで作った硬い合金）が作られ、また文字が使われるようになったのもこの時期です。国家は盛衰を繰り返すようになります。
+　エジプトでは、ナイル川が毎年氾滅したため、流域に養分が行き渡ることから、農業が発達しました。また、川の氾濫で土地の境界が分からなくなるため、測量の技術が発達したほか、川の氾濫の時期を知るために天文学が生み出され、十進法や、一年を三六五日とする太陽暦が作られ、象形文字の神聖文字（ヒエログリフ）も用いられました。紀元前三一〇〇年ごろには統一王国ができ、王（ファラオ）が絶大な権力を握って、巨大なピラミッドや神殿を建設しました。
+　ティグリス川とユーフラテス川に挟まれたメソポタミア（現在のイラク）では養分の豊富な豊かな土地を利用して農耕が発達し、紀元前快〇〇〇年ごろ、いくつかの都市国家が生まれました。城壁に囲まれた都市には、神殿や王宮が作られました。また、楔形文字が粘土板に刻まれました。古代エジプトの神聖文字と古代メソポタミアの楔形文字が組み合わさって、後にアルファベットに発展していくことになります。また、月の満ち欠けから太陰暦を発明して一週間を七日とする制度を生み出し、時間に用いる六十進法も発明されました。そして、紀元前十八世紀にメソポタミアを統一したハンムラビ王は「ハンムラビ法典」を制定しました。
+　インド北西部を流れるインダス川流域では、紀元前二五〇〇年ごろに、モヘンジョダロに代表される都市を中心とした文化が栄えました。都市は、碁盤の目状の道路、下水道の水路が整備されているのが特徴です。インダス文字が用いられました。その後、紀元前一五〇〇年ごろには、中央アジアからアーリア人が侵入し、バラモンという神官を頂点とする身分制度を持つ国々ができました。これは、後のカースト制度の元になるもので、現在のインドに残っています。
+　黄河と長江という二つの大河が流れている中国では、紀元前六〇〇〇年ごろに農耕文化が生まれました。南方の長江流域では水田稲作の文化、北方の黄河流域では粟と黍を中心とする畑作農業の文化が発展しました。
+　水田稲作は無肥料で連作が可能で、しか単位あたりの収穫が大きいという特徴があります。畑作は追肥が必要で連作障害が生じやすく、単位あたりの収穫が少ないため労働集約型の農耕になります。そのため、黄河文化では貧富の差が大きくなる傾向があり、力のある勢力は周辺地域を力で併合するようになりました。そして、階級社会や国を生み出していきます。
+　紀元前十七世紀ごろ、黄河流域に殷（商）の国が興り、青銅器を祭器として用いたほか、中国最古の文字である甲骨文字が使われるようになりました。周が殷を滅ぼし、やがて周が衰退すると、紀元前八世紀ごろには群雄割拠の春秋・戦国時代に入りました。この時代に、鉄器が作られるようになり、武器や農具として利用されました。
+　朝鮮半島では、日本より遅れて磨製石器と土器が作られるようになり、縄文人と同様に、狩猟と採集を中心とする生活を営んでいました。</div>
+
+    <h3>【注釈 7,8,9,10】<span class="page-num">p.34-45</span></h3>
+    <div class="audio-player">
+        <span class="audio-label">🎧 Listen to the Audio</span>
+        <audio controls src="audio-1.1/foot7-10.m4a" style="width: 100%;"></audio>
+    </div>
+    <div class="text-box">注⑦ 神聖文字
+古代エジプトで、主に碑文などに用いられた象形文字。約700文字が知られ、24の子音文字がある。きわめて具象而装飾的である。紀元前3100年ごろから約3,500年間用いられた。
+
+注⑧ 楔形文字
+粘土板に葦などで作った筆記具で記した文字で、石板や金属板に彫ることもあった。当初は象形文字だったが、徐々に記号化されて楔形となり、表意文字から表音文字に変化した。
+
+注⑨ インダス文字
+印章、銅片、土器などに刻まれ、約400文字が知られるが、長文の文字史料がなく、他言語との併記も発見されず、いまだ解読されていない。
+
+注⑩ 甲骨文字
+殷の遺跡から出土した、占いに用いた亀甲や獣骨に刻まれた象形文字で、漢字の最も古い形を示している。殷の文化の解読に大きく貢献した。</div>
+
+    <h3>【文献資料】『ハンムラビ法典』（部分要約）<span class="page-num">p.23</span></h3>
+    <div class="audio-player">
+        <span class="audio-label">🎧 Listen to the Audio</span>
+        <audio controls src="audio-1.1/doc1.m4a" style="width: 100%;"></audio>
+    </div>
+    <div class="text-box">一条　他人を殺人の罪で訴えても、その罪を証明できないときには、訴えた者は死刑となる。
+一九六条　他人の目を潰した者は、その目を潰される。
+一九九条　奴隷の目を潰し、あるいは骨を折った者は、その奴隷の値段の半分を支払う。
+二〇〇条　同じ身分の他人の歯を折った者は、その歯を折られる。</div>
+
+    <h3>（ヘ）宗教の起こり<span class="page-num">p.24</span></h3>
+    <div class="audio-player">
+        <span class="audio-label">🎧 Listen to the Audio</span>
+        <audio controls src="audio-1.1/F.m4a" style="width: 100%;"></audio>
+    </div>
+    <div class="text-box">【課題】世界の宗教はどのように起こり、広がっていったのだろう。古代文明との関係も考えてみよう。
+
+　昔の人たちは、大自然の出来事に圧倒的な力を感じ、人間を超越する存在として「神」について考えるようになりました。人々は健康や天候など、いろいろなことを神に祈るようになり、また神の教えを説く者も現れて、地域ごとに特色のある宗教が成立しました。なかには地域を超えて広がっていく宗教も現れます。
+　仏教、キリスト教、イスラム教は世界三大宗教といわれています。紀元前五世紀ごろにインドのシャカ族の王子として生まれた釈迦は、修行を積むことで悟りを開き、煩悩から解放されることを教え、仏教が起こりました。仏教はアジアの広い範囲に普及し、六世紀には日本にも伝わり、各地で独自の発展を遂げました（巻末資料⑳仏教の伝播）。
+　西アジアのパレスチナ地方では、一神教のユダヤ教が起こり、その教えは『旧約聖書』にまとめられました。紀元前後にイエスがユダヤ教の教えに新たな解釈を加えました。人々はイエスを救世主と信じましたが、ローマ帝国により処刑されました。その後、その教えは弟子たちにより広められ、キリスト教が起こりました。人は罪を負って生まれてくるも、必ず神の愛を受けられるという教えは『新約聖書』にまとめられています。キリスト教は欧州に伝わり, 世界各地に広がりました。日本に伝わったのは十六世紀です。
+　七世紀のアラビア半島では、ムハンマドがユダヤ教とキリスト教を元に、神アラーのお告げを受けたとしてイスラム教を起こしました。神への絶対服従や、偶像崇拝の禁止を教え、聖典『コーラン』はイスラム社会のあらゆるものを規律するようになりました。イスラム教はアラビア半島を中心とし、北アフリカから東南アジアに至る広い範囲に及びました。
+　日本列島の人々は、太陽や山や海などの自然の要素に神が宿ると信じ、神々や先祖を拝んできました。それを神道といいます。</div>
+
+    <h3>【注釈 11,12,13,14】<span class="page-num">p.24</span></h3>
+    <div class="audio-player">
+        <span class="audio-label">🎧 Listen to the Audio</span>
+        <audio controls src="audio-1.1/foot11-14.m4a" style="width: 100%;"></audio>
+    </div>
+    <div class="text-box">注端 人生には生・老・病・死の苦しみがあることを知った釈迦は、29歳で出家し、35歳で悟りを開いた。以降「ブッダ」（目覚めた人）と呼ばれた。
+
+注⑫ 上座部仏教と大乗仏教
+紀元前後のインドで、すべての人の救済を説く大乗仏教が起こり、チベット、中央アジアから、中国、朝鮮を経て6世紀には日本にも伝わり、各地で独自の発展を遂げた。自己の悟りを第一とする伝統的な仏教は上座部仏教と呼ばれ、スリランカ、ミャンマー、タイなどに広がった。
+
+注⑬　パレスチナに生まれたイエスは「神の愛」を説き、神を愛することと隣人を愛することの不可分を述べ、弱者や罪人にまで救いの手を差し伸べた。
+
+注⑭ キリスト教の伝播
+キリスト教は3世紀にローマ帝国から弾圧された引、313年にローマ帝国に公認され、ヨーロッパに伝わった。さらに392年には、ローマ帝国の国教とされ、他の宗教が禁止された。後にヨーロッパの国々が世界に覇権を広げて植民地を持つと、キリスト教は世界各地に広がった。日本に伝わったのは16世紀。</div>
+
+    <h3>（ト）天孫降臨<span class="page-num">p.25</span></h3>
+    <div class="audio-player">
+        <span class="audio-label">🎧 Listen to the Audio</span>
+        <audio controls src="audio-1.1/G.m4a" style="width: 100%;"></audio>
+    </div>
+    <div class="text-box">【課題】『古事記』『日本書紀』は天皇の先祖についてどのように伝えているのだろう。
+『古事記』は人や日本の起源については何も記していませんが、天皇の祖先について次のように記しています。
+
+国生み物語で日本列島を生んだ伊邪那岐神は、最後に身を清めてから左目を洗うと天照大御神、右目を洗うと月読命、そこで鼻を洗うと須佐之男命が現れました。いずれも尊い神なので、三貴子といいます。天照大御神は、父から高天原（天上世界）を「知らす」（治める）ように命じられました。
+　一方、葦原中国（地上世界）では、須佐之男命の子孫にあたる大国主神が立派な国を作りましたが、話し合いの結果、葦原中国は天照大御神に譲られることになりました。話し合いで国が譲られたので、これを国譲り神話といいます（コラム『『古事記』の国譲り神話』参照）。そこで、天照大御神は、自らの孫を葦原中国にお遣いになり、国を知らすように命じられました。
+　この命により地上に降臨したのが、初代天皇とされる神倭伊波礼琵古命の祖先にあたる邇邇芸命です。天つ神（高天原の尊い神。ここでは天照大御神のこと）の孫が降臨したので天孫降臨といいます（文献史料『『古事記』天孫降臨の神勅』『『日本書紀』天壌無窮の神勅』参照）。
+　このとき、天照大御神は邇邇芸命に八尺瓊勾玉、御鏡、草薙剣を賜いました。これが「天皇が天皇であることの証」といわれる三種の神器です。これらが後に歴代天皇により継承され、現在の天皇陛下に受け継がれています（天皇陛下から現在の天皇陛下に剣（草薙剣）と璽（八尺瓊勾玉）を受け継ぐ剣璽等承継の儀が皇居宮殿で執り行われました）。
+　ところで、『日本書紀』もこれに近い神話を伝えていますが、天照大御神は「私が高天原に所有する斎庭の穂（高天原の清らかな田で育てた稲穂）を持たせなさい」と仰せになり、邇邇芸命のこと。『古事記』と『日本書紀』では異なった字を用いている）に神浅な稲穂を持たせて降臨させたと書かれています。
+　天孫降臨神話は、天皇の祖先に当たる、天つ神の子孫が高天原から葦原中国に降臨したことだけでなく、まもなく社会の基盤となる稲作の起源は、天皇の先祖からもたらされたことを伝えようとしています。天皇の祖先について記記がこのように記述していることから、当時の日本人の考え方がこのようなものであったと知ることができます。</div>
+
+    <h3>【文献資料】『古事記』天孫降臨の神勅<span class="page-num">p.25</span></h3>
+    <div class="audio-player">
+        <span class="audio-label">🎧 Listen to the Audio</span>
+        <audio controls src="audio-1.1/doc2.m4a" style="width: 100%;"></audio>
+    </div>
+    <div class="text-box">（読み下し文）此の豊葦原水穂国は、汝が知らさむ国ぞと事依し賜ふ。故、命の随に天降るべし。
+（現代語訳）この豊葦原水穂国は、あなたが知らす国であると命令する。よって命令のとおりに天降りなさい。
+
+※「読み下し文」とは、元の漢語を日本語の語順に直して、おくり仮名などを付けて書いた文。</div>
+
+    <h3>【文献資料】『日本書紀』天壌無窮の神勅<span class="page-num">p.25</span></h3>
+    <div class="audio-player">
+        <span class="audio-label">🎧 Listen to the Audio</span>
+        <audio controls src="audio-1.1/doc3.m4a" style="width: 100%;"></audio>
+    </div>
+    <div class="text-box">（読み下し文）葦原千五百秋瑞穂国は、係、吾が子孫の王たるべき地なり。爾皇孫就きて治らせ。行矣。宝祚の隆えまさむこと、天壌と無窮けむ。
+（現代語訳）葦原千五百秋瑞穂国は、我が子孫が君主たるべき地である。皇孫であるあなたが行って治めなさい。さあ、お行きなさい。皇室が栄えることは、天地とともに永遠であろう。</div>
+
+    <h3>【コラム】『古事記』の国譲り神話<span class="page-num">p.23-24</span></h3>
+    <div class="audio-player">
+        <span class="audio-label">🎧 Listen to the Audio</span>
+        <audio controls src="audio-1.1/col2.m4a" style="width: 100%;"></audio>
+    </div>
+    <div class="text-box">大国主神の国づくりにより、葦原中国（地上世界）は賑やかな国になりました。しかし、高天原の神々は、葦原中国は元来、天照大御神の御子が知らす（治める）国である。「お前の考えはいかがなものか」と尋ねました。
+すると大国主神は「我が子 八重事代主神が申し上げることでしょう」と答えました。そこで八重事代主神を呼んできて問うたときに、八重事代主神は父の大国主神に「この国は、天つ神の御子に奉りましょう」と言いました。
+建御雷神が「他に意見を申す子はあるか」と尋ねると、大国主神は「もう一人我が子、建御名方神がいます」と答えました。すると、建御名方神が千人がかりで引くほどの大きな岩を手の先であそびながらやってきました。建御名方神が「我が国にやってきて、こそこそと隠れて物言うのはいったい誰だ。ならば力比べをしてやろうじゃないか。私が先に手を取ってみせよう」と言って、建御雷神の手を取ったとき、たちまち建御雷神の手は氷の柱に変化し、さらに剣となって建御名方神を襲おうとしたのです。これに驚いた建御名方神は恐れて退きました。
+今度は建御雷神が建御名方神の手をつかみにかかります。建御雷神はまるで若い葦を握りつぶすように、建御名方神の手を握りつぶし、たちどころに遠くへ投げ飛ばしてしまいました。命の危険を感じた建御名方神は逃げだしました。すると、建御雷神がこれを追いかけていき、科野国州羽の海（長野県の諏訪湖）に追いつめると、建御名方神は「今後この地から他へは行かないことにします。この葦原中国は、天つ神の御子の命ずるまま献上いたします」と言って頭を下げたのです。
+建御雷神はまた出雲国に帰ってきて、大国主神に「二人の子供は天つ神の御子の考えに背かないと言ったが、あなたの心はいかに」と聞きました。大国主神は次のように答えました。
+「私も背くつもりはありません。この葦原中国は命令に従って差し上げることにいたしましょう。ただ、地盤に届くほどの宮柱を深く掘り立て、高天原に届くほどの千木を高く立てた、壮大な宮殿に私住み、祭られることをお許しください」
+このように申し上げると、大国主神は、出雲国の海岸近くに立派な宮殿（出雲大社、島根県）をお造りになりました。
+
+＊「国譲り神話」からこの時代の日本人の信仰やものの見方などを知ることができます。</div>
+</div>
+
+<div id="part2" class="content-area">
+    <h2>Full Text Transcription (English)</h2>
+
+    <h3>(A) Japan’s Jomon Pottery is Among the Oldest in the World<span class="page-num">p.26-27</span></h3>
+    <div class="audio-player">
+        <span class="audio-label">🎧 Listen to the Audio</span>
+        <audio controls src="audio-1.1/E-A.m4a" style="width: 100%;"></audio>
+    </div>
+    <div class="text-box">【Question】 When did people on the Japanese archipelago begin using pottery?
+
+In Japan, the beginning of the Jomon period is defined by the inception of pottery making, while the start of the Yayoi period (which marks the end of the Jomon period) is defined by the beginning of full-scale wet-rice cultivation.
+
+In 1998 (Heisei 10), during the reconstruction of a private home in Sotogahama Town, Aomori Prefecture, an excavation survey conducted by the former Kanita Town Board of Education uncovered pottery that would significantly rewrite the history of world archaeology.
+
+The discovered pottery consisted entirely of small fragments and bore no patterns. However, radiocarbon dating of organic charred remains adhering to the fragments revealed that the pottery was approximately 16,300 years old, making it among the oldest in the world. This measurement pushed the estimated emergence of pottery in Japan back by about 4,000 years compared to what had previously been believed.
+
+Following this, numerous ancient pottery pieces were confirmed across a wide area of the Japanese archipelago. For instance, pottery from the Fukui Cave in Nagasaki Prefecture is estimated to be about 16,000 years old; from the Gotenyama Site in Tokyo, about 16,300 years old; from the Miyagase-Kitahara Site in Kanagawa Prefecture, about 15,500 years old; and from the Taisho 3 Site in Hokkaido, about 14,500 years old. The fact that the Fukui Cave and Gotenyama sites are from almost the exact same period as the Sotogahama site indicates that pottery technology spread from Hokkaido in the north to Kyushu in the west within a remarkably short span of time.
+
+Stone arrowheads discovered at this site are also considered the oldest in the world. Furthermore, because charred soot was found on the interior of the pottery, it is clear that these vessels were used for boiling and cooking. Consequently, this is regarded as the oldest evidence of human cooking.
+
+This location, known as the Odai Yamamoto I Site, dates back to the Incipient Jomon period and is currently designated as a National Historic Site.
+
+Previously, the Jomon period was defined by the appearance of earthenware adorned with cord-marked patterns ("Jomon"), which developed at a considerably early stage globally. Although the pottery from the Odai Yamamoto I Site lacked these cord markings, its discovery pushed back the chronological beginning of the Jomon period. The culture of this era is called Jomon culture, and the period lasted until the introduction of wet-rice cultivation. Jomon pottery is dark brown, thick, and brittle due to being fired at low temperatures. Some vessels, such as "flame-style" pottery, feature exceptionally beautiful and elaborate decorations.</div>
+
+    <h3>(B) The End of the Ice Age and the Jomon Transgression<span class="page-num">p.27-28</span></h3>
+    <div class="audio-player">
+        <span class="audio-label">🎧 Listen to the Audio</span>
+        <audio controls src="audio-1.1/E-B.m4a" style="width: 100%;"></audio>
+    </div>
+    <div class="text-box">【Question】 How did people’s lives change as a result of climatic shifts?
+
+With the arrival of this warm era, the Japanese archipelago became one of the most resource-rich lands in the world, yielding an abundance of both plant resources and seafood. Even today, Japanese culinary culture revolves heavily around fish, and the origins of this tradition lie in the Jomon period.
+
+During this era, large mammals disappeared from the Japanese archipelago, and smaller, agile animals like wild boars and deer increased in number. To capture them, bows and arrows tipped with stone arrowheads were introduced, and pitfall traps were constructed.
+
+Because the Jomon people were blessed with such a bountiful environment, they began to lead a settled, sedentary lifestyle, though agriculture and pastoralism did not highly develop. Rice cultivation did not emerge in northern Kyushu until the Final Jomon period.
+
+The Jomon period lasted for more than 13,000 years. If we consider the dawn of culture—marked by the appearance of polished stone tools—as the beginning of Japanese history, it means that the Paleolithic and Jomon periods combined account for over 90% of Japan's entire historical timeline.</div>
+
+    <h3>【Notes 1, 2, 3, 4】<span class="page-num">p.26-29</span></h3>
+    <div class="audio-player">
+        <span class="audio-label">🎧 Listen to the Audio</span>
+        <audio controls src="audio-1.1/notes1-4.m4a" style="width: 100%;"></audio>
+    </div>
+    <div class="text-box">Note ① Pottery (Earthenware): Vessels made by shaping clay, drying it, and firing it.
+
+Note ② Radiocarbon Dating: A method used to determine the age of organic materials. The atmosphere and oceans contain a minute amount of a radioactive isotope called Carbon-14. This Carbon-14 is absorbed into the bodies of living organisms. When an organism dies and its supply of Carbon-14 from the outside world ceases, the amount of Carbon-14 decreases at a fixed rate, halving every 5,730 years. Therefore, by measuring the remaining Carbon-14 in plant or animal remains, their age can be determined.
+
+Note ③ Duration of the Jomon Period: There is virtually no other example in world history of a single cultural period lasting this long. Because the Jomon period was affluent and stable, it is believed that there was no urgent need to adopt foreign cultures. Even when agriculture became widespread on the Chinese mainland, the Jomon people did not actively adopt farming despite ongoing interactions. Jomon culture was not a "backward culture that failed to farm," but rather a mature, sophisticated culture that developed a sophisticated foraging economy in harmony with nature.
+
+Note ④ Tree Felling and Wood Processing: Polished stone axes made of hard stone were used to fell timber for constructing pit-dwellings. To process the wood, techniques included scoring the timber with stone axes, soaking it in water, or charring it to soften it before carving it with stone tools.</div>
+
+    <h3>(C) Jomon Culture and the Lifestyle of the Jomon People<span class="page-num">p.28-31</span></h3>
+    <div class="audio-player">
+        <span class="audio-label">🎧 Listen to the Audio</span>
+        <audio controls src="audio-1.1/E-C.m4a" style="width: 100%;"></audio>
+    </div>
+    <div class="text-box">【Question】 What were the characteristics of the lifestyle and spiritual beliefs of the Jomon people?
+
+American science scholar Edward S. Morse was traveling by train from Yokohama to Shinbashi in 1877 (Meiji 10) when he noticed a massive accumulation of seashells exposed on a cliff near Omori Station. He later obtained government permission to conduct an excavation. This site turned out to be a shell midden (mound) dating from the Late to Final Jomon period.
+
+Shell middens are archaeological sites where ancient people discarded food remains and refuse. They yield seashells, animal and fish bones, pottery fragments, clay figurines (dogu), stone axes, stone arrowheads, bone and antler tools, and human skeletal remains. The site Morse found came to be known as the Omori Shell Midden. Because the pottery unearthed here featured cord-like impressions, it was named "Jomon" (cord-marked) pottery. Morse's excavation is recognized as the birth of Japanese archaeology. The Omori Shell Midden was later designated a National Historic Site, and the artifacts excavated by Morse are designated as Important Cultural Properties.
+
+Surveys of Jomon sites nationwide have revealed that the Jomon people secured their food through hunting, fishing, and gathering using chipped stone tools, polished stone tools, bows and arrows, and bone and antler implements. Bone and antler implements refer to tools crafted from animal skeletons; fishhooks and harpoons made from the bones of deer, wild boars, and dolphins have been found in Jomon sites across Japan.
+
+People relied on walnuts and acorns, as well as root vegetables like wild yams, as their dietary staples. Evidence shows they also systematically cultivated plants such as barnyard millet, chestnuts, buckwheat, beans, perilla, and bottle gourds. The introduction of pottery expanded their culinary repertoire to include boiling, steaming, and stewing. It also enabled them to cook soups and leach tannins from bitter acorns, allowing for more efficient nutrient absorption. Furthermore, pottery made it possible to store food and beverages, and it was during this time that the brewing of alcohol began.
+
+People lived in pit-dwellings constructed by digging a shallow pit into the ground, erecting wooden pillars, and thatching the roof with grass, forming organized settlements. They also ventured out to sea in dugout canoes carved from large logs to fish and engage in long-distance maritime travel. At the Sannai-Maruyama Site in Aomori Prefecture, evidence of a massive, long-term settlement has been discovered.
+
+The Jomon people practiced animism, believing that spirits resided in all elements of nature. Female-shaped clay figurines (Dogu) and phallic stone rods (sekibou) are believed to have been used in rituals to pray for fertility and the prosperity of descendants. This worldview, which emphasizes harmony with nature, remains deeply embedded in the values of modern Japanese people.
+
+The Jomon people also practiced specific customs such as flexed burials (burying the deceased with their arms and legs bent) and ritual tooth extraction. Flexed burials are thought to have been performed to prevent the spirits of the dead from returning to cause harm, while tooth extraction—the removal of specific permanent teeth—is believed to have served as a rite of passage into adulthood.
+
+The absence of exceptionally large dwellings, the presence of communal burial grounds, and the general lack of lavish grave goods indicate that there was no significant wealth disparity or social hierarchy among the Jomon people.
+
+Since there is no evidence of large-scale migration into the archipelago during this transition, it is deduced that the Paleolithic people were the direct ancestors of the Jomon people. Furthermore, because their skeletal structures closely resemble those of modern Japanese people, the Jomon people are considered the foundational ancestors of the Japanese population.</div>
+
+    <h3>【Column】 A Large-Scale Jomon Settlement: The Sannai-Maruyama Site<span class="page-num">p.21</span></h3>
+    <div class="audio-player">
+        <span class="audio-label">🎧 Listen to the Audio</span>
+        <audio controls src="audio-1.1/E-col1.m4a" style="width: 100%;"></audio>
+    </div>
+    <div class="text-box">The Sannai-Maruyama Site, located in Aomori City, Aomori Prefecture, is a massive settlement site from the Jomon period. Excavations began in 1992 (Heisei 4). The discoveries made at this site fundamentally transformed the conventional historical understanding of the Jomon people.
+
+Previously, it was widely believed that the Jomon people did not form large settlements and did not cultivate plants. However, evidence at Sannai-Maruyama revealed that the inhabitants systematically planted chestnut trees, cleared undergrowth, and carefully managed their arboreal resources. Furthermore, the discovery of six enormous pillar holes, each measuring two meters in diameter and depth, indicates the existence of a monumental structure requiring highly sophisticated civil engineering and architectural skills.
+
+The Sannai-Maruyama settlement was occupied from the Early to Middle Jomon period, roughly from 5,900 to 4,300 years ago, spanning a period of about 1,600 years. To put this into perspective, Edo (Tokyo) has existed for about 400 years since Tokugawa Ieyasu built his castle, and Kyoto has existed for about 1,200 years since Emperor Kanmu relocated the capital. A continuous settlement lasting 1,600 years in antiquity is extraordinary. The total number of dwellings at the site is estimated to exceed 3,000. While these houses did not all exist simultaneously, the sheer scale completely shattered previous assumptions about Jomon settlements.
+
+Long-distance trade was also highly active. Artifacts discovered include jade from Itoigawa, amber from Iwate, and asphalt from Akita. Additionally, the site features a large, organized cemetery, demonstrating a culture that treated the deceased with great care and reverence.
+
+The excavations at the Sannai-Maruyama Site proved that the Jomon people constructed a remarkably sophisticated society, achieving a level of complexity rarely seen among cultures based fundamentally on a foraging economy.</div>
+
+    <h3>(D) Global Civilizations and Japan<span class="page-num">p.31-33</span></h3>
+    <div class="audio-player">
+        <span class="audio-label">🎧 Listen to the Audio</span>
+        <audio controls src="audio-1.1/E-D.m4a" style="width: 100%;"></audio>
+    </div>
+    <div class="text-box">【Question】 Where did world civilizations emerge, and what were their characteristics? What commonalities exist between Japanese culture and global civilizations? How did they influence each other during their formation?
+
+In addition to the world's oldest class of pottery found in Japan, similarly ancient pottery examples exist in Russia and China. Pottery discovered at the Gromatukha site in Russia dates back approximately 15,000 years, and there are reports of pottery found in a cave in Hunan Province, China, dating to around 18,000 years ago. This indicates that the world's earliest pottery technology was concentrated in East Asia. In contrast, populations in South Asia, West Asia, Africa, and Europe did not begin producing pottery until roughly 8,000 years later. In terms of ceramic technology, East Asia was exceptionally advanced.
+
+However, regarding the 18,000-year-old pottery from Hunan Province, requests by Japanese archaeologists to inspect the site were denied. Furthermore, the dating was not conducted on the pottery itself but was inferred from animal bones found in the surrounding soil layers, leaving a margin of error of about 3,000 years with 18,000 years as merely an upper limit. China subsequently announced the discovery of 20,000-year-old pottery in Jiangxi Province, but this too was deduced from soil layers without direct testing of organic components, making its reliability questionable.
+
+Traditionally, the establishment of a civilization has been defined by the onset of agriculture, urban formation, the utilization of writing systems, and extensive trade networks. Determining which civilization stands as the ultimate ancestor of global society remains an ongoing area of research, and no definitive consensus exists.
+
+At one time, Egypt, Mesopotamia, the Indus, and China were collectively referred to as the "Four Great Ancient Civilizations," and it was believed that all global civilizations were offshoots of these four. However, as archaeological research advanced, sites meeting the criteria for civilization were discovered across various other regions, and the theory that all world civilizations originated exclusively from these four centers has since been discredited.
+
+Although full-scale food production and urbanization occurred later on the Japanese archipelago, the discovery of some of the world's oldest polished stone tools and ceramics indicates that Japan possesses an independent cultural origin. In his book The Clash of Civilizations, the prominent American political scientist Samuel Huntington noted that most scholars recognize Japan as a distinct, self-contained civilization, referring to Japanese culture from the 5th century onward as "Japanese Civilization". Because the Japanese archipelago was geographically separated from the Asian continent, it developed a unique culture with distinct characteristics. However, Japanese culture did not evolve in total isolation. The people of the Japanese archipelago actively embraced and adapted cultural elements from the mainland and the Korean Peninsula, while also exerting cultural influence over East Asia. Japanese culture developed through a dynamic history of mutual influence, particularly with Chinese civilization.
+
+Agriculture and pastoralism began earlier than in Japan in regions such as Egypt, Mesopotamia, the Indus Valley, the Yellow Rarer, Yangtze Rivers, Mesoamerica, and the Andes. Civilizations along major river valleys focused primarily on cereal crops, whereas mountainous regions like the Andes and island regions like Papua New Guinea develop agriculture centered on root vegetables, such as potatoes and yams.
+
+On the Eurasian continent, agriculture began exceptionally early. It has been confirmed fledged that rice cultivation was established in the middle reaches of the Yangtze River approximately 12,000 years ago. The oldest physical remnants of rice paddies, dating back about 6,400 years, were found in the middle and lower reaches of the Yangtze, confirming this region as the cradle of rice agriculture.
+
+Other ancient agricultural milestones include evidence of rye cultivation at the Tell Abu Hureyra site in Syria around 11,000 years ago, and irrigation infrastructure for tuber cultivation in Papua New Guinea dating to roughly 9,000 years ago.
+
+The Japanese archipelago was covered with lush temperate forests and surrounded by rich oceans, providing an abundance of both terrestrial and marine food sources. Because procuring food was relatively easy compared to other regions, the transition to full-scale agricultural reliance was delayed in Japan. However, during the Final Jomon period, global cooling reduced natural foraging yields. Facing this environmental stress, the Jomon people finally committed to adopting rice cultivation. When food security drops drastically, societies typically over-exploit resources, resulting in high proportions of juvenile animals in refuse heaps. Yet, Jomon shell middens from this transitional phase show no increase in juvenile animal remains, and skeletal examinations of Jomon people from this period reveal almost no signs of arrested physical growth caused by starvation. This demonstrates that the Jomon people transitioned into an agricultural society deliberately and with a degree of socioeconomic stability. The active integration of mainland culture following this shift will be detailed in the "Yayoi Period" section.</div>
+
+    <h3>【Notes 5, 6】<span class="page-num">p.32-33</span></h3>
+    <div class="audio-player">
+        <span class="audio-label">🎧 Listen to the Audio</span>
+        <audio controls src="audio-1.1/notes5-6.m4a" style="width: 100%;"></audio>
+    </div>
+    <div class="text-box">Note ⑤ The Origins of Pastoralism: Pastoralism began around 8000–7000 BCE in West Asia with the basics of sheep. This was followed by goats, and later cattle. Horses were domesticated on the Central Asian steppes, camels in North Africa and Central Asia, and reindeer in Eastern Siberia and Northern Europe. The origin of pastoralism is believed to have arisen when human hunters began following migratory herds, eventually developing techniques to manage and control herd movements.
+
+Note ⑥ Prehistory and History: The era before the existence of written records, where archaeology and geology serve as the primary sources of historical knowledge, is called "Prehistory". The era that can be studied using written historical accounts is called "History". In Japan, the timeline from the Paleolithic period through the Yayoi period is classified as prehistory, while the Yamato period onward is considered history.</div>
+
+    <h3>(E) The State of the Eurasian Continent<span class="page-num">p.23-24</span></h3>
+    <div class="audio-player">
+        <span class="audio-label">🎧 Listen to the Audio</span>
+        <audio controls src="audio-1.1/E-E.m4a" style="width: 100%;"></audio>
+    </div>
+    <div class="text-box">【Question】 What are the defining features of global civilizations? What elements of these civilizations continue to influence modern Japanese culture?
+
+Once human societies established stable food production through agriculture, they settled permanently, constructed urban centers, built monumental temples, and eventually formed ancient states. This led to wealth disparities and the emergence of monarchs to govern the populace. Bronze implements (a durable alloy of copper and tin) were crafted for rituals and warfare, and writing systems emerged during this pivotal era. Consequently, states began to undergo cycles of rise and fall.
+
+In Egypt, agriculture flourished because the Nile River flooded annually, depositing nutrient-rich silt across the river valley. Because these annual floods erased property boundaries, sophisticated surveying techniques were developed. To predict the timing of the floods, astronomy emerged, leading to the creation of a decimal system and a solar calendar with a 365-day year. The Egyptians also utilized a hieroglyphic writing system (Holy Characters). Around 3100 BCE, a unified kingdom was established, and the pharaohs wielded absolute authority, commanding the construction of massive pyramids and temples.
+
+In Mesopotamia (modern-day Iraq), situated between the Tigris and Euphrates rivers, agriculture thrived due to the exceptionally fertile soil. Around 3000 BCE, several independent city-states emerged. These walled urban centers contained grand temples and royal palaces. The Mesopotamians recorded information using cuneiform script incised onto clay tablets. The combination of Egyptian hieroglyphs and Mesopotamian cuneiform would eventually evolve into the modern alphabet. Additionally, the Mesopotamians developed a lunar calendar based on the phases of the moon, created the seven-day week system, and invented the sexagesimal (base-60) system for measuring time. In the 18th century BCE, King Hammurabi unified Mesopotamia and promulgated the Code of Hammurabi.
+
+In the Indus River Valley, flowing through northwestern India, an urban-centric civilization epitomized by cities like Mohenjo-daro flourished around 2500 BCE. These cities were characterized by highly organized grid-pattern streets and advanced underground drainage networks. They utilized the Indus script. Around 1500 BCE, Indo-Aryans migrated into the region from Central Asia, establishing kingdoms governed by a rigid social hierarchy topped by priests known as Brahmins. This system laid the foundation for the caste system that persists in modern India.
+
+In China, home to the Yellow and Yangtze rivers, agricultural cultures emerged around 6000 BCE. A wet-rice cultivation culture developed along the southern Yangtze River valley, while a farming culture focused on millet and broomcorn millet arose along the northern Yellow River basin.
+
+Wet-rice cultivation can be sustained continuously without fertilizer and yields a high caloric return per unit of land. Conversely, millet farming requires active fertilization and is prone to consecutive cultivation injury, resulting in lower yields that necessitate highly labor-intensive farming methods. Consequently, wealth disparities grew more rapidly within the Yellow River culture, leading powerful factions to forcefully annex neighboring regions. This dynamic spurred the rise of stratified societies and institutionalized states.
+
+Around the 17th century BCE, the Shang (Yin) Dynasty arose along the Yellow River basin, utilizing advanced bronze vessels for state rituals and developing oracle bone script, the oldest known form of Chinese writing. Around 1100 BCE, the Zhou Dynasty overthrew the Shang. As Zhou authority eventually waned, the region fractured into a multitude of competing factions, entering the tumultuous Spring and Autumn and Warring States periods by the 8th century BCE. During this era, iron implements emerged, transforming both military warfare and agricultural productivity.
+
+Meanwhile, on the Korean Peninsula, the production of polished stone tools and pottery began later than in Japan, and the inhabitants led a lifestyle centered on hunting, fishing, and gathering, similar to the Jomon people.</div>
+
+    <h3>【Notes 7, 8, 9, 10】<span class="page-num">p.34-45</span></h3>
+    <div class="audio-player">
+        <span class="audio-label">🎧 Listen to the Audio</span>
+        <audio controls src="audio-1.1/notes7-10.m4a" style="width: 100%;"></audio>
+    </div>
+    <div class="text-box">Note ⑦ Hieroglyphs (Holy Characters): A pictographic script used primarily for formal inscriptions in ancient Egypt. Approximately 700 characters are documented, including 24 consonantal signs. The script is highly pictorial and decorative, and it was utilized for roughly 3,500 years starting around 3100 BCE.
+
+Note ⑧ Cuneiform Script: A writing system incised onto clay tablets using a stylus fashioned from reeds, though it was occasionally carved into stone or metal plates. It originated as a pictographic script but gradually became abstracted into wedge-shaped (cuneiform) signs, transitioning from logograms to phonograms.
+
+Note ⑨ Indus Script: A script found on seals, copper plates, and pottery fragments. Approximately 400 distinct characters have been identified. Because no long textual records exist and no bilingual inscriptions have been discovered, the script remains undeciphered.
+
+Note ⑩ Oracle Bone Script: A pictographic script incised on tortoise shells and animal bones used for state divination, excavated from Shang Dynasty sites. It represents the earliest ancestral form of Chinese characters (kanji) and has been vital to deciphering Shang history.</div>
+
+    <h3>【Documentary Material】 The Code of Hammurabi (Abridged)<span class="page-num">p.23</span></h3>
+    <div class="audio-player">
+        <span class="audio-label">🎧 Listen to the Audio</span>
+        <audio controls src="audio-1.1/doc1.m4a" style="width: 100%;"></audio>
+    </div>
+    <div class="text-box">Law 1: If a man brings an accusation of a capital crime against another man but cannot prove it, the accuser shall be put to death.
+
+Law 196: If a man destroys the eye of another man, his eye shall be destroyed.
+
+Law 199: If he destroys the eye of a man’s slave or breaks the bone of a man’s slave, he shall pay half of the slave's value.
+
+Law 200: If a man knocks out the teeth of his equal, his teeth shall be knocked out.</div>
+
+    <h3>(F) The Dawn of Religion<span class="page-num">p.24</span></h3>
+    <div class="audio-player">
+        <span class="audio-label">🎧 Listen to the Audio</span>
+        <audio controls src="audio-1.1/E-F.m4a" style="width: 100%;"></audio>
+    </div>
+    <div class="text-box">【Question】 How did global religions originate and spread? Consider their relationships with ancient civilizations.
+
+In antiquity, human beings felt overwhelmed by the immense power of natural phenomena, leading them to conceptualize "gods" as entities transcending human capability. People began praying to these deities for health, favorable weather, and protection. Over time, spiritual leaders emerged to interpret divine will, leading to the formation of distinct, localized religions. Certain faiths eventually transitioned their geographical origins to become global phenomena.
+
+Buddhism, Christianity, and Islam are recognized as the world's three major religions. In the 5th century BCE, Siddhartha Gautama, born a prince of the Shakya clan in India, attained enlightenment through rigorous asceticism and meditation. He formulated a doctrine to liberate humanity from worldly desires, marking the birth of Buddhism. Buddhism spread across vast expanses of Asia, arriving in Japan in the 6th century, where it underwent a unique historical evolution.
+
+In the Levant (Palestine region) of West Asia, the monotheistic faith of Judaism emerged, its core tenets codified within the Hebrew Bible (Old Testament). Around the turn of the common era, Jesus introduced a revolutionary interpretation of Jewish law. Although many recognized him as the Messiah, he was executed by the Roman authorities. Following his death, his disciples propagated his teachings, establishing Christianity. The core doctrine—that humanity is born inherent with sin yet remains eligible for unconditional divine love—is preserved within the New Testament. Christianity spread throughout Europe and eventually worldwide. It was introduced to Japan in the 16th century.
+
+In the 7th century, on the Arabian Peninsula, Muhammad founded Islam after receiving revelations from the supreme deity, Allah, building upon the foundations of Judaism and Christianity. Islam commands absolute submission to divine will and strictly prohibits idolatry. Its sacred text, the Quran, serves as the comprehensive legal and moral framework for Islamic society. Islam spread rapidly from the Arabian Peninsula across North Africa, the Middle East, and into Southeast Asia.
+
+Meanwhile, the inhabitants of the Japanese archipelago maintained an animistic belief system, holding that divine spirits resided within natural elements like the sun, mountains, and oceans. They venerated both these natural deities and their ancestral lineages, a spiritual tradition known as Shinto.</div>
+
+    <h3>【Notes 11, 12, 13, 14】<span class="page-num">p.24</span></h3>
+    <div class="audio-player">
+        <span class="audio-label">🎧 Listen to the Audio</span>
+        <audio controls src="audio-1.1/notes11-14.m4a" style="width: 100%;"></audio>
+    </div>
+    <div class="text-box">Note ⑪ Shakya Gautama: Upon recognizing that human existence is defined by the fundamental sufferings of birth, aging, sickness, and death, the prince renounced his royal status at age 29. He attained ultimate enlightenment at age 35, thereafter becoming known as the "Buddha" (The Enlightened One).
+
+Note ⑫ Theravada and Mahayana Buddhism: Around the turn of the common era, Mahayana Buddhism, which emphasizes the universal salvation of all living beings, arose in India. It spread through Tibet and Central Asia into China and Korea, arriving in Japan in the 6th century. Conversely, the traditional school prioritizing individual enlightenment is known as Theravada Buddhism, which expanded through Sri Lanka, Myanmar, and Thailand.
+
+Note ⑬ Jesus of Nazareth: Born in Palestine, Jesus preached the doctrine of "divine love," stating that love for God and love for one's neighbor are inseparable. He extended compassion and salvation to the marginalized, the impoverished, and the outcast.
+
+Note ⑭ The Spread of Christianity: Christianity faced severe persecution within the Roman Empire during its first three centuries, but it was officially tolerated via imperial edict in 313 CE and designated the exclusive state religion in 392 CE. As European powers expanded globally in subsequent centuries, Christianity spread worldwide. It arrived in Japan in the 16th century.</div>
+
+    <h3>(G) Tansen Korin: The Descent of the Heavenly Grandson<span class="page-num">p.25</span></h3>
+    <div class="audio-player">
+        <span class="audio-label">🎧 Listen to the Audio</span>
+        <audio controls src="audio-1.1/E-G.m4a" style="width: 100%;"></audio>
+    </div>
+    <div class="text-box">【Question】 How do the Kojiki and Nihon Shoki chronicle the lineage of the imperial ancestors?
+
+While the Kojiki does not detail the physical origins of the human race or the Japanese population, it records the ancestral lineage of the Emperors as follows:
+
+Following the creation of the Japanese archipelago, the deity Izanagi performed a ritual purification. When he washed his left eye, Amaterasu-Omikami (The Sun Goddess) was born; when he washed his right eye, Tsukuyomi-no-Mikoto (The Moon God) appeared; and when he washed his nose, Susanoo-no-Mikoto emerged. These noble deities are collectively referred to as the Sankishi (Three Noble Children). Amaterasu-Omikami was commanded by her father to govern Takamagahara (The High Plain of Heaven).
+
+Meanwhile, in Ashihara-no-Nakatsukuni (The Central Land of Reed Plains, representing the terrestrial world), Susanoo's descendant, Okuninushi-no-Kami, successfully developed a prosperous earthly kingdom. However, following diplomatic negotiations, it was agreed that sovereignty over the terrestrial world would be ceded to the lineage of Amaterasu-Omikami, a narrative known as the Myth of the Transfer of the Land (Kuniyuzuri). Amaterasu-Omikami then dispatched her grandson to govern the earthly realm.
+
+The deity who descended to earth under this divine mandate was Ninigi-no-Mikoto, the direct ancestor of Kamuyamato-Iwarebiko-no-Mikoto (the legendary first Emperor, Jimmu). Because the grandson of the supreme heavenly deity descended to the earthly realm, this event is called Tansen Korin (The Descent of the Heavenly Grandson).
+
+Upon his departure, Amaterasu-Omikami bestowed three sacred treasures upon Ninigi-no-Mikoto: the Yasakani-no-Magatama (comma-shaped jewel), the Yata-no-Kagami (sacred mirror), and the Kusanagi-no-Tsurugi (sacred sword). These constitute the Three Sacred Treasures, the ultimate symbols of imperial legitimacy. They have been transmitted through generations of successive Emperors down to the modern day.
+
+The Nihon Shoki preserves a similar narrative, noting that Amaterasu-Omikami explicitly commanded her grandson to take the sacred rice cultivated within the heavenly fields of Takamagahara down to earth.
+
+The myth of Tansen Korin serves a dual purpose: it establishes the divine origin of the imperial lineage and asserts that the origin of agriculture—the socioeconomic bedrock of ancient Japanese society—was a divine gift brought to earth by the imperial ancestors. This narrative offers invaluable insight into the spiritual worldview and values held by the early Japanese people.</div>
+
+    <h3>【Documentary Material】 The Divine Mandate of Tansen Korin from the Kojiki<span class="page-num">p.25</span></h3>
+    <div class="audio-player">
+        <span class="audio-label">🎧 Listen to the Audio</span>
+        <audio controls src="audio-1.1/doc2.m4a" style="width: 100%;"></audio>
+    </div>
+    <div class="text-box">Classical Japanese Text: 此の豊葦原水穂国は、汝が知らさむ国ぞと事依し賜ふ。故、命の随に天降るべし。
+
+Modern English Translation: "This bountiful Land of Reed Plains and Fertile Rice Ears is the realm that you are divinely ordained to govern. Therefore, in accordance with this heavenly mandate, you must descend to earth."
+
+※ "Reading-down Text" (Yomihashibun) refers to a text in which the original classical Chinese characters are rearranged into Japanese word order, with grammatical particles (okurigana) added.</div>
+
+    <h3>【Documentary Material】 The Eternal Divine Mandate from the Nihon Shoki<span class="page-num">p.25</span></h3>
+    <div class="audio-player">
+        <span class="audio-label">🎧 Listen to the Audio</span>
+        <audio controls src="audio-1.1/doc3.m4a" style="width: 100%;"></audio>
+    </div>
+    <div class="text-box">Classical Japanese Text: 葦原千五百秋瑞穂国は、係、吾が子孫の王たるべき地なり。爾皇孫就きて治らせ。行矣。宝祚の隆えまさむこと、天壌と無窮けむ。
+
+Modern English Translation: "This Land of Reed Plains and Bountiful Rice Harvests is the land where my descendants shall reign as sovereigns. Go forth, my imperial grandson, and rule over it. May your imperial lineage prosper eternally, coeval with heaven and earth."</div>
+
+    <h3>【Column】 The Myth of the Transfer of the Land from the Kojiki<span class="page-num">p.23-24</span></h3>
+    <div class="audio-player">
+        <span class="audio-label">🎧 Listen to the Audio</span>
+        <audio controls src="audio-1.1/E-col2.m4a" style="width: 100%;"></audio>
+    </div>
+    <div class="text-box">Through the industrious efforts of Okuninushi-no-Kami, the terrestrial realm of Ashihara-no-Nakatsukuni became a prosperous and thriving land. However, the heavenly deities of Takamagahara declared that this earthly realm was rightfully intended to be ruled by the offspring of Amaterasu-Omikami, challenging Okuninushi with the inquiry: "What say you to this?".
+
+Okuninushi replied that the decision rested with his son, Yaekotoshiro-no-Kami. When summoned and questioned, Yaekotoshiro-no-Kami dutifully declared, "We shall respectfully yield this land to the son of the heavenly deities.".
+
+The heavenly envoy, Takemikazuchi-no-Kami, then inquired if there were any other sons who wished to speak. At that moment, Okuninushi's second son, Takeminakata-no-Kami, arrived, effortlessly lifting a massive boulder on his fingertips, and challenged the envoy: "Who comes here whispering in secret? Let us settle this through a trial of physical strength!". However, when Takeminakata grasped Takemikazuchi's hand, the envoy's arm instantly transformed into a pillar of ice and then into a sharp blade. Terrified, Takeminakata recoiled in fear.
+
+Takemikazuchi then seized Takeminakata's hand, crushing it effortlessly as if it were a fragile young reed, and cast him aside. Fearing for his life, Takeminakata fled to the shores of Lake Suwa in Shinano Province (modern-day Nagano Prefecture). Cornered by the envoy, Takeminakata submitted, pledging, "I shall never leave this place. I completely surrender this terrestrial realm to the mandate of the heavenly deities.".
+
+Takemikazuchi returned to Izumo to receive Okuninushi's final response. Okuninushi answered, "My sons have submitted to the heavenly mandate, and I too shall offer no resistance. I yield this earthly realm. In return, I humbly request that a grand and magnificent palace be constructed for me, with pillars sunk deep into the earth and roof beams reaching high toward the heavens, where I may dwell and be venerated.".
+
+Following this agreement, Okuninushi-no-Kami retreated from the political realm, and a monumental palace—the Izumo Taisha Grand Shrine in Shimane Prefecture—was constructed near the coast of Izumo to serve as his eternal sanctuary.
+
+＊The Myth of the Transfer of the Land provides a vital window into the spiritual beliefs, political ideologies, and cultural worldview of the ancient Japanese people.</div>
+</div>
+
+<div id="part3" class="content-area">
+    <div id="quiz-jp-container"></div>
+</div>
+
+<div id="part4" class="content-area">
+    <div id="quiz-en-container"></div>
+</div>
+
+<script>
+    // --- QUIZ DATA (All 50 Questions for 1.2 Jomon Period) ---
+    const quizData = [
+        { q: "日本では、何が作られるようになったことを縄文時代の始まりと定義していますか？", a: ["土器", "鉄器", "水田", "高床倉庫"], e: "日本史において、土器の出現が縄文時代の始まり、本格的な水田稲作の開始が弥生時代の始まりと定義されます。" },
+        { q: "1998年に世界の考古学の歴史を大きく塗り替える土器片が発見された、青森県の遺跡は？", a: ["大平山元Ⅰ遺跡", "三内丸山遺跡", "岩宿遺跡", "亀ヶ岡遺跡"], e: "青森県外ヶ浜町の大平山元Ⅰ遺跡で、世界最古級の土器片が発見されました。" },
+        { q: "大平山元Ⅰ遺跡から出土した土器は、およそ何年前のものと測定されましたか？", a: ["約1万6300年前", "約1万年前", "約3万8000年前", "約46億年前"], e: "放射性炭素年代測定法により、約1万6300年前のものと判明しました。" },
+        { q: "大平山元Ⅰ遺跡の土器片に、付着していた「あるもの」から年代が測定されました。それは何ですか？", a: ["焦げた炭化物", "稲の籾殻", "動物の血液", "火山灰"], e: "土器の内側等に付着していた炭化物を試料として測定が行われました。これが人類最古の調理の跡ともされています。" },
+        { q: "大平山元Ⅰ遺跡から出土した、世界最古と見られている石でできた矢尻を何といいますか？", a: ["石鏃（せきぞく）", "石斧（せきふ）", "石匙（いしさじ）", "細石刃（さいせきじん）"], e: "土器とともに、世界最古級の石鏃（矢尻）が出土しています。" },
+        { q: "長崎県で発見された、約1万6000年前の古い時代の土器が多数確認された洞窟遺跡は？", a: ["福井洞窟", "御殿山遺跡", "大正3遺跡", "サキタリ洞"], e: "長崎県の福井洞窟の土器は約1万6000年前のものとされています。" },
+        { q: "縄文土器の一般的な特徴として、正しいものはどれですか？", a: ["黒褐色で厚手でもろい", "赤褐色で薄くて硬い", "青色で装飾がない", "灰色で高温で焼かれている"], e: "縄文土器は低温で焼き上げるため、黒褐色で厚手でもろいという特徴があります。" },
+        { q: "縄文土器のなかでも、きわめて美しく激しい立体的な装飾を持つ、代表的な土器の様式は？", a: ["火焔型土器（かえんがたどき）", "弥生土器", "須恵器", "土師器"], e: "新潟県などで多く出土する火焔型土器は、縄文文化の芸術性の高さを象徴しています。" },
+        { q: "今から約1万1000年前に最後の氷期が終わり、世界はどのような気候へ移行しましたか？", a: ["温暖な時代", "さらに寒冷な時代", "乾燥した砂漠化の時代", "氷河期"], e: "最後の氷期が終わり温暖化したことで、植物の成長が早まり森林が増加しました。" },
+        { q: "氷が溶けて海面が上昇し、日本列島に多くの入江が形成された環境変化を何といいますか？", a: ["縄文海進（じょうもんかいしん）", "氷期", "地殻変動", "温暖化"], e: "温暖化で海面が上昇し、森と海が接近したこの現象を「縄文海進」と呼びます。" },
+        { q: "縄文時代、姿を消した大型動物に代わって増えた、猪や鹿などの動物の特徴は？", a: ["機敏な動きをする中小の動物", "動きの遅い巨大動物", "肉食の猛獣", "飛べない巨大な鳥類"], e: "気候変化により森林が広がり、すばしっこい中小動物が増加しました。" },
+        { q: "猪や鹿など、動きの機敏な中小動物を捕まえるために縄文人が用いた道具は？", a: ["弓矢", "マンモスの牙", "鉄製の罠", "巨大な網"], e: "縄文時代には中小動物を射止めるため、石鏃をつけた弓矢が広く普及しました。" },
+        { q: "環境が豊かになったことで、縄文人の生活スタイルはどのように変化しましたか？", a: ["定住するようになった", "常に移動し続けるようになった", "洞窟にのみ引きこもった", "海外へ集団移住した"], e: "一年を通じて食料（木の実や魚介類）が豊富に得られたため、人々は定住を始めました。" },
+        { q: "縄文時代は約何年間続いたとされていますか？", a: ["約1万3000年以上", "約1000年間", "約500年間", "約10万年間"], e: "縄文時代は、日本の歴史の大部分（約9割以上が先土器・縄文）を占める長い期間続きました。" },
+        { q: "1877年、大森貝塚を発見し、日本の考古学の発祥のきっかけを作ったアメリカ人の動物学者は？", a: ["エドワード・S・モース", "ペリー", "タダヒロ・アイザワ", "シーボルト"], e: "モースが横浜から新橋へ向かう列車の窓から大森貝塚を発見しました。" },
+        { q: "貝塚とは、当時の縄文人にとってどのような場所でしたか？", a: ["食べ残しやごみなどを捨てた遺跡", "宝物を埋蔵した秘密の場所", "王の巨大な大墓", "土器を焼くための専用の窯"], e: "ゴミ捨て場であると同時に、魚の骨や道具、人骨なども見つかる重要な遺跡です。" } ,
+        { q: "出土した土器に「縄の模様」が付いていたことから、モースらによって名付けられた言葉は？", a: ["縄文土器", "弥生土器", "黒曜石器", "大森土器"], e: "土器についた縄の模様（コードマーク）から「縄文土器」と命名されました。" },
+        { q: "縄文人が動物の骨や角から作った、釣針や銛（もり）などの道具を何といいますか？", a: ["骨角器（こっかくき）", "青銅器", "鉄器", "磨製石斧"], e: "鹿や猪、イルカなどの骨利用して精巧な釣針や銛が作られました。" },
+        { q: "縄文人が、地面に穴を掘って柱を立て、草で屋根を葺いた住居を何といいますか？", a: ["竪穴式住居（たてあなしきじゅうきょ）", "高床倉庫", "高床式住居", "石造りの家"], e: "縄文時代の一般的な定住住居で、集落を形成していました。" },
+        { q: "あらゆるものに精霊が宿ると考え、女性をかたどって作られた土製の人形を何といいますか？", a: ["土偶（どぐう）", "埴輪（はにわ）", "石棒（せきぼう）", "木偶"], e: "土偶は子孫繁栄や魔除け、祭祀の道具として用いられたと考えられています。" },
+        { q: "死者の霊が災いを及ぼすのを防ぐため、手足を折り曲げて葬る風習を何といいますか？", a: ["屈葬（くっそう）", "伸展葬（しんてんそう）", "火葬", "風葬"], e: "縄文時代によく見られる、死者をコンパクトに曲げて埋葬する方法です。" },
+        { q: "成人式の意味を持つものと考えられている、特定の永久歯を抜く縄文時代の風習は？", a: ["抜歯（ばっし）", "屈葬", "お歯黒", "入れ歯"], e: "特定の歯を抜くことで、大人の仲間入りや社会的地位を示したとされています。" },
+        { q: "縄文時代の社会構造の特徴として、正しい説明はどれですか？", a: ["貧富の差や身分の上下はなかった", "奴隷制度が存在した", "強力な絶対君主が支配していた", "大規模な身分階級があった"], e: "特別に大きい住居や副葬品の格差がないことから、平等な社会だったと考えられています。" },
+        { q: "青森県にある、およそ1600年間も営まれた縄文時代最大級の大規模集落跡は？", a: ["三内丸山遺跡", "大平山元Ⅰ遺跡", "吉野ヶ里遺跡", "岩宿遺跡"], e: "青森市の三内丸山遺跡は、縄文人の高度な定住社会を証明しました。" },
+        { q: "三内丸山遺跡の調査から、縄文人が計画的に植林・管理していたことが分かった樹木は？", a: ["栗（クリ）の木", "杉（スギ）の木", "松（マツ）の木", "竹（タケ）"], e: "クリの遺伝子分析などから、野生ではなく計画的に管理・栽培されていたことが判明しました。" },
+        { q: "三内丸山遺跡で見つかった、高度な土木建築技術を思わせる巨大な遺構は？", a: ["六つの巨大な柱の跡", "ピラミッド", "巨大な石垣", "鉄製の塔"], e: "直径と深さがともに2メートルの巨大な柱穴が6つ、規則正しく発見されました。" },
+        { q: "三内丸山遺跡から出土した、新潟県の糸魚川（いといがわ）周辺が産地の貴重な石は？", a: ["翡翠（ヒスイ）", "琥珀（コハク）", "アスファルト", "黒曜石"], e: "糸魚川産のヒスイが見つかったことは、遠方との盛んな交易・流通の証拠となっています。" },
+        { q: "農耕を開始し、都市を形成し、文字を用いて広範囲な交易を行うことで成立するものを何といいますか？", a: ["文明", "集落", "サークル", "ギルド"], e: "これまでは四大文明がすべての祖とされていましたが、現在では各地で独自に発生したとされています。" },
+        { q: "国際政治学者サミュエル・ハンチントンが著書『文明の衝突』で、日本文化を何と呼びましたか？", a: ["日本文明", "中華文明の亜流", "東アジア文化圏", "孤立集落"], e: "ハンチントンは、日本を独立した固有の「日本文明」として位置づけました。" },
+        { q: "世界的にも非常に早い時期（約1万2000年前）に稲作農耕が始まったとされる、中国の流域は？", a: ["長江（ちょうこう）流域", "黄河（こうが）流域", "インダス川流域", "メソポタミア"], e: "長江中流域で、世界最古級の稲作を中心とした農耕の跡が確認されています。" },
+        { q: "縄文人が本格的な農耕（稲作）に着手するのが遅れた大きな理由は？", a: ["山海の幸などの自然の恵みが豊富だったから", "技術が全くなかったから", "大陸との交流が一切なかったから", "文字が読めなかったから"], e: "日本列島は豊かな温帯林と海に囲まれ、食料を得ることが容易だったため、農耕へ移る必要性が低かったとされています。" },
+        { q: "祭りや戦いに使う「青銅器」とは、銅と何を混ぜて作った硬い合金ですか？", a: ["錫（すず）", "鉄（てつ）", "金（きん）", "アルミニウム"], e: "青銅器は、銅と錫などの合金で、文明の成立期に国家や王の権力の象徴として作られました。" },
+        { q: "文字による歴史記録が存在しない時代を何といいますか？", a: ["先史時代（せんしじだい）", "歴史時代", "大和時代", "春秋時代"], e: "歴史の記録（文字）がない時代を先史時代、ある時代を歴史時代と呼びます。" },
+        { q: "エジプト文明で、毎年定期的に氾濫し、農業の発展に大きく貢献した大河は？", a: ["ナイル川", "ティグリス川", "ユーフラテス川", "インダス川"], e: "「エジプトはナイルの賜物」と言われるように、定期的な氾濫が豊かな土壌をもたらしました。" },
+        { q: "エジプト文明で、川の氾濫時期を知るために生み出された学問は？", a: ["天文学", "医学", "法学", "経済学"], e: "星の動きを観察する天文学が発達し、一年を365日とする太陽暦が作られました。" },
+        { q: "古代エジプトで碑文などに用いられた、きわめて具象的で装飾的な象形文字を何といいますか？", a: ["神聖文字（ヒエログリフ）", "楔形文字", "インダス文字", "甲骨文字"], e: "古代エジプト独自の象形文字で、約700文字が知られています。" },
+        { q: "ティグリス川とユーフラテス川に挟まれた、「川の間の土地」を意味する文明の地は？", a: ["メソポタミア", "エジプト", "インダス", "黄河"], e: "現在のイラク周辺にあたり、人類最古級の都市国家や農耕が発達しました。" },
+        { q: "古代メソポタミアで、粘土板に葦（あし）などの筆記具で記された文字を何といいますか？", a: ["楔形文字（くさびがたもじ）", "神聖文字", "インダス文字", "漢字"], e: "最初は象形文字でしたが、徐々に記号化されて楔形（くさびがた）になりました。" },
+        { q: "「目には目を、歯には歯を」で知られる、メソポタミアを統一した王が制定した法典は？", a: ["ハンムラビ法典", "十二表法", "大宝律令", "ナポレオン法典"], e: "紀元前18世紀にハンムラビ王によって制定された、復讐法や身分法を含む世界的な法典です。" },
+        { q: "紀元前2500年ごろ、インダス川流域で栄えた、碁盤の目状の道路や下水道が整備された代表的な都市遺跡は？", a: ["モヘンジョダロ", "バビロン", "アンコールワット", "パルテノン"], e: "インダス文明を代表する都市遺跡で、きわめて高度な都市計画が行われていました。" },
+        { q: "インダス川流域に侵入し、後のカースト制度の元になる身分制度を作った中央アジアからの民族は？", a: ["アーリア人", "フェニキア人", "ペルシア人", "エジプト人"], e: "アーリア人が侵入し、バラモン（神官）を頂点とする厳しい階級社会が形成されました。" },
+        { q: "中国の黄河流域で栄えた文化において、主に栽培されていた作物はどれですか？", a: ["粟（あわ）と黍（きび）", "米（こめ）", "小麦（こむぎ）", "トウモロコシ"], e: "北方の黄河流域では畑作（粟・黍）が中心で、南方の長江流域では水田稲作が発達しました。" },
+        { q: "紀元前17世紀ごろ黄河流域に興った、中国最古の文字とされる文字が使われた国は？", a: ["殷（商）", "周", "秦", "漢"], e: "殷（いん）では、占いの結果などを記録するために甲骨文字が使われました。" },
+        { q: "殷（商）の遺跡から出土した、亀の甲羅や動物の骨に刻まれた漢字の原形となる文字は？", a: ["甲骨文字（こうこつもじ）", "楔形文字", "神聖文字", "インダス文字"], e: "占い（神意の確認）のために獣骨に刻まれた、漢字の最も古い形です。" },
+        { q: "紀元前5世紀ごろ、インドで修行を積み、煩悩から解放されることを説いて仏教を開いた人物は？", a: ["釈迦（シャカ）", "ムハンマド", "イエス", "孔子"], e: "シャカ族の王子として生まれ、29歳で出家、35歳で悟りを開いて「ブッダ」と呼ばれました。" },
+        { q: "自己の悟りを第一とする伝統的な「上座部仏教」に対し、すべての人の救済を説き日本にも伝わった仏教の宗派は？", a: ["大乗仏教（だいじょうぶっきょう）", "小乗仏教", "ヒンドゥー教", "イスラム教"], e: "大乗仏教はチベットや中国、朝鮮を経て、6世紀に日本へ伝来しました。" },
+        { q: "パレスチナで生まれたイエスが、ユダヤ教を元に「神の愛」と隣人愛を説いて興した宗教は？", a: ["キリスト教", "イスラム教", "仏教", "神道"], e: "イエスの死後、弟子たちによって教えが広まり、世界的な宗教（キリスト教）となりました。" },
+        { q: "7世紀のアラビア半島で、預言者ムハンマドが神アラーのお告げを受けたとして起こした宗教は？", a: ["イスラム教", "キリスト教", "ユダヤ教", "ヒンドゥー教"], e: "聖典『コーラン』を掲げ、偶像崇拝を厳格に禁止する一神教です。" },
+        { q: "日本列島の人々は、太陽・山・海などの自然のあらゆる要素に神が宿ると信じて拝んできた独自の信仰は？", a: ["神道（しんとう）", "仏教", "キリスト教", "道教"], e: "特定の開祖を持たず、自然や先祖を敬う日本固有の伝統的な自然観・信仰です。" },
+        { q: "天照大御神の命により、初代天皇の祖先として地上（葦原中国）に降臨した神様は？", a: ["邇邇芸命（ニニギノミコト）", "須佐之男命", "大国主神", "建御雷神"], e: "天つ神の孫が降臨したこの出来事を「天孫降臨（てんそんこうりん）」と呼びます。" }
+    ];
+
+    const enQs = [
+        "What is defined as the beginning of the Jomon period in Japanese history?",
+        "At which site in Aomori Prefecture were world-oldest class pottery fragments discovered in 1998?",
+        "Approximately how many years ago did the pottery discovered at the Odai Yamamoto I Site date back to?",
+        "What was adhering to the interior of the Odai Yamamoto I pottery that allowed its age to be measured?",
+        "What are the world's oldest stone arrowheads found at the Odai Yamamoto I Site called?",
+        "At which cave site in Nagasaki Prefecture was a large amount of ancient pottery from about 16,000 years ago confirmed?",
+        "Which of the following is a correct characteristic of general Jomon pottery?",
+        "Which representative style of Jomon pottery features exceptionally beautiful, intense, and three-dimensional decorations?",
+        "Approximately 11,000 years ago, the last Ice Age ended. What kind of era did the world transition into?",
+        "What is the environmental phenomenon called where sea levels rose due to warming and created many inlets in Japan?",
+        "Due to climate change, large mammals disappeared. What kind of animals increased instead, such as wild boars and deer?",
+        "What tool did the Jomon people widely use to capture agile, small to medium-sized animals like wild boars and deer?",
+        "How did the lifestyle of the Jomon people change as their environment became richer in resources?",
+        "Approximately how long is the Jomon period said to have lasted?",
+        "Who was the American zoologist who discovered the Omori Shell Midden in 1877 and initiated Japanese archaeology?",
+        "What kind of place was a shell midden (mound) for the Jomon people at that time?",
+        "What name was given to the pottery by Morse and others because of the cord-like impressions on it?",
+        "What are the tools such as fishhooks and harpoons crafted from animal bones and antlers called?",
+        "What are the shelters called that Jomon people lived in, made by digging a pit, erecting pillars, and thatching a roof?",
+        "Believing that spirits resided in all things, what are the female-shaped clay figurines made by Jomon people called?",
+        "What is the burial custom called where the deceased was buried with their arms and legs bent to prevent spirits from causing harm?",
+        "What Jomon custom of removing specific permanent teeth is believed to have served as a rite of passage into adulthood?",
+        "Which of the following correctly describes the social structure of the Jomon period?",
+        "Which massive settlement site in Aomori Prefecture was continuously occupied for approximately 1,600 years?",
+        "Through research at Sannai-Maruyama, which trees were found to have been systematically planted and managed by the Jomon people?",
+        "What monumental structure was discovered at the Sannai-Maruyama Site, indicating advanced civil engineering skills?",
+        "What precious stone, originally from Itoigawa in Niigata Prefecture, was excavated from the Sannai-Maruyama Site?",
+        "What is established when a society begins agriculture, forms cities, uses writing, and engages in extensive trade?",
+        "What did political scientist Samuel Huntington call Japanese culture in his book 'The Clash of Civilizations'?",
+        "In which river basin in China did rice cultivation begin exceptionally early, about 12,000 years ago?",
+        "What was the main reason why the Jomon people were late in adopting full-scale agricultural reliance (rice farming)?",
+        "What metal is mixed with copper to create 'bronze', which was used for rituals and warfare?",
+        "What is the era called for which no written historical records exist?",
+        "Which great river in the Egyptian civilization flooded annually and contributed significantly to the development of agriculture?",
+        "What science emerged in ancient Egypt to predict the timing of river floods, leading to the creation of the solar calendar?",
+        "What pictographic script, highly pictorial and decorative, was used primarily for formal inscriptions in ancient Egypt?",
+        "What is the land between the Tigris and Euphrates rivers called, which means 'land between rivers'?",
+        "What is the writing system called that was its incised onto clay tablets using a reed stylus in ancient Mesopotamia?",
+        "What is the famous code promulgated by the king who unified Mesopotamia, known for 'An eye for an eye'?",
+        "Which city site from around 2500 BCE in the Indus Valley was highly characterized by grid-pattern streets and drainage?",
+        "Which group from Central Asia migrated into the Indus Valley and established a rigid social hierarchy (caste system)?",
+        "Which crops were primarily cultivated in the culture that flourished along the Yellow River basin in China?",
+        "In which ancient Chinese dynasty, emerging around the 17th century BCE, was the earliest form of Chinese writing used?",
+        "What is the script called that was incised on tortoise shells and animal bones for state divination during the Shang Dynasty?",
+        "Who attained enlightenment through rigorous meditation in India around the 5th century BCE and founded Buddhism?",
+        "Which school of Buddhism, emphasizing universal salvation, spread to Japan via China and Korea?",
+        "Who preached the doctrine of 'divine love' and neighborly love based on Judaism, leading to the birth of Christianity?",
+        "Which religion was founded in the 7th century on the Arabian Peninsula by the Prophet Muhammad?",
+        "What is the traditional Japanese faith where people believe divine spirits reside in all natural elements like the sun and mountains?",
+        "Who was the deity dispatched to the terrestrial world by order of Amaterasu-Omikami as the ancestor of the first Emperor?"
+    ];
+
+    const enAs = [
+        ["Pottery", "Iron tools", "Rice paddies", "Raised-floor granaries"],
+        ["Odai Yamamoto I Site", "Sannai-Maruyama Site", "Iwajuku Site", "Kamegaoka Site"],
+        ["16,300 years ago", "10,000 years ago", "38,000 years ago", "4.6 billion years ago"],
+        ["Charred remains", "Rice husks", "Animal blood", "Volcanic ash"],
+        ["Stone arrowheads (Sekibou)", "Stone axes", "Stone scrapers", "Microliths"],
+        ["Fukui Cave", "Gotenyama Site", "Taisho 3 Site", "Sakitari Cave"],
+        ["Dark brown, thick, and brittle", "Red-brown, thin, and hard", "Blue and plain", "Grey and high-fired"],
+        ["Flame-style pottery", "Yayoi pottery", "Sueki ware", "Hajiki ware"],
+        ["A warmer era", "A colder era", "A dry desert era", "An Ice Age"],
+        ["Jomon Transgression", "Glacial period", "Tectonic shift", "Global warming"],
+        ["Agile, small to medium animals", "Slow, gigantic animals", "Carnivorous beasts", "Flightless giant birds"],
+        ["Bows and arrows", "Mammoth tusks", "Iron traps", "Giant nets"],
+        ["They began to settle down", "They kept moving constantly", "They lived only in caves", "They migrated overseas"],
+        ["More than 13,000 years", "1,000 years", "500 years", "100,000 years"],
+        ["Edward S. Morse", "Commodore Perry", "Tadahiro Aizawa", "Philipp Franz von Siebold"],
+        ["A site for food remains and refuse", "A secret place for treasures", "A grand tomb for kings", "A kiln for pottery"],
+        ["Jomon pottery", "Yayoi pottery", "Obsidian tools", "Omori pottery"],
+        ["Bone and antler implements", "Bronze implements", "Iron implements", "Polished stone axes"],
+        ["Pit-dwellings", "Raised-floor granaries", "Raised-floor dwellings", "Stone houses"],
+        ["Dogu", "Haniwa", "Sekibou (Stone rods)", "Moku-ju"],
+        ["Flexed burials", "Extended burials", "Cremation", "Sky burials"],
+        ["Tooth extraction", "Flexed burial", "Teeth blackening", "False teeth"],
+        ["There was no wealth disparity or hierarchy", "A slave system existed", "An absolute monarch ruled", "A strict caste system existed"],
+        ["Sannai-Maruyama Site", "Odai Yamamoto I Site", "Yoshinogari Site", "Iwajuku Site"],
+        ["Chestnut trees", "Cedar trees", "Pine trees", "Bamboo"],
+        ["Six enormous pillar holes", "Pyramids", "Giant stone walls", "Iron towers"],
+        ["Jade (Hisui)", "Amber (Kohaku)", "Asphalt", "Obsidian"],
+        ["Civilization", "Settlement", "Circle", "Guild"],
+        ["Japanese Civilization", "An offshoot of Chinese", "East Asian Cultural Sphere", "Isolated settlement"],
+        ["Yangtze River basin", "Yellow River basin", "Indus River basin", "Mesopotamia"],
+        ["Natural resources were highly abundant", "They lacked any technical skills", "They had no mainland contact", "They could not read writing"],
+        ["Tin", "Iron", "Gold", "Aluminum"],
+        ["Prehistory", "History", "Yamato period", "Spring and Autumn period"],
+        ["Nile River", "Tigris River", "Euphrates River", "Indus River"],
+        ["Astronomy", "Medicine", "Law", "Economics"],
+        ["Hieroglyphs (Holy Characters)", "Cuneiform script", "Indus script", "Oracle bone script"],
+        ["Mesopotamia", "Egypt", "Indus", "Yellow River"],
+        ["Cuneiform script", "Hieroglyphs", "Indus script", "Chinese characters"],
+        ["Code of Hammurabi", "Twelve Tables", "Taiho Code", "Napoleonic Code"],
+        ["Mohenjo-daro", "Babylon", "Ankor Wat", "Parthenon"],
+        ["Indo-Aryans", "Phoenicians", "Persians", "Egyptians"],
+        ["Millet and broomcorn millet", "Rice", "Wheat", "Corn"],
+        ["Shang (Yin) Dynasty", "Zhou Dynasty", "Qin Dynasty", "Han Dynasty"],
+        ["Oracle bone script", "Cuneiform script", "Hieroglyphs", "Indus script"],
+        ["釈迦 (Shakya Gautama)", "Muhammad", "Jesus", "Confucius"],
+        ["Mahayana Buddhism", "Theravada Buddhism", "Hinduism", "Islam"],
+        ["Jesus of Nazareth", "Muhammad", "Buddha", "Confucius"],
+        ["Islam", "Christianity", "Judaism", "Hinduism"],
+        ["Shinto", "Buddhism", "Christianity", "Taoism"],
+        ["Ninigi-no-Mikoto", "Susanoo-no-Mikoto", "Okuninushi-no-Kami", "Takemikazuchi"]
+    ];
+
+    const enExps = [
+        "In Japan, the onset of pottery marks the beginning of the Jomon period.",
+        "The Odai Yamamoto I Site in Sotogahama Town rewritten world archaeology history.",
+        "Radiocarbon dating proved it was approximately 16,300 years old.",
+        "Charred remnants from cooking on the interior were used for dating.",
+        "Along with pottery, the world's oldest stone arrowheads were excavated.",
+        "Pottery from Fukui Cave is estimated to be around 16,000 years old.",
+        "Jomon pottery is dark brown, thick, and brittle due to low-temperature firing.",
+        "Flame-style pottery represents the high artistic quality of Jomon culture.",
+        "Warming accelerated plant growth and expanded forests globally.",
+        "Rising sea levels brought forests and the sea closer, creating rich fishing grounds.",
+        "As forests expanded, agile small to medium-sized animals increased.",
+        "Bows and arrows were introduced to hunt fast-moving smaller animals.",
+        "Abundant food resources allowed people to lead a settled, sedentary lifestyle.",
+        "The Jomon period lasted long, accounting for over 90% of the timeline with Pre-Pottery.",
+        "Edward S. Morse discovered the site from a train window in 1877.",
+        "They are sites where ancient people discarded refuse, food remains, and tools.",
+        "It was named 'Jomon' (cord-marked) due to its unique patterns.",
+        "Tools were crafted from animal skeletons for hunting and fishing.",
+        "Pit-dwellings were the standard form of Jomon housing within settlements.",
+        "Dogu figurines are believed to be used to pray for fertility and prosperity.",
+        "Flexed burials were common, likely to bind the spirit of the deceased.",
+        "Removing specific teeth served as a rite of passage into adulthood.",
+        "The lack of disparity in houses or grave goods implies an egalitarian society.",
+        "Sannai-Maruyama proved the existence of a highly sophisticated Jomon society.",
+        "Evidence shows they systematically managed and cultivated chestnut trees.",
+        "Six monumental pillar holes measuring 2m in diameter were discovered.",
+        "Jade from Itoigawa proves active long-distance trade networks.",
+        "Civilizations emerged independently in various parts of the world.",
+        "Huntington classified Japan as a self-contained 'Japanese Civilization'.",
+        "Rice cultivation was confirmed in the Yangtze River basin 12,000 years ago.",
+        "Abundant natural resources meant there was no urgent need to farm.",
+        "Bronze is an alloy of copper and tin, symbolizing early state power.",
+        "The era before written records is prehistory; after is history.",
+        "The Nile's regular floods provided rich soil for early agriculture.",
+        "Astronomy developed to track floods, leading to the 365-day solar calendar.",
+        "Hieroglyphs were formal, pictorial inscriptions used in ancient Egypt.",
+        "Located in modern Iraq, it hosted the earliest city-states.",
+        "Cuneiform signs were incised onto clay tablets and gradually abstracted.",
+        "Promulgated in the 18th century BCE, it includes laws of retaliation.",
+        "Mohenjo-daro featured highly advanced urban planning and drainage.",
+        "Indo-Aryans established a rigid social hierarchy topping priests (Brahmins).",
+        "The Yellow River focused on millet farming, while the Yangtze focused on rice.",
+        "The Shang Dynasty utilized advanced bronze and oracle bone script.",
+        "Oracle bone script represents the earliest ancestral form of kanji.",
+        "Siddhartha Gautama renounced royalty at 29 and attained enlightenment at 35.",
+        "Mahayana Buddhism emphasizes universal salvation and reached Japan in the 6th century.",
+        "Jesus introduced a revolutionary doctrine of universal divine love.",
+        "Islam strictly prohibits idolatry and relies on the sacred Quran.",
+        "Shinto is an animistic belief with no specific founder, respecting nature.",
+        "Ninigi-no-Mikoto descended to earth in a myth known as Tansen Korin."
+    ];
+
+    function shuffle(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+    }
+
+    // グローバル展開
+    window.openTab = function(evt, tabId) {
+        const areas = document.getElementsByClassName("content-area");
+        for (let i = 0; i < areas.length; i++) areas[i].classList.remove("active");
+        
+        const btns = document.getElementsByClassName("tab-btn");
+        for (let i = 0; i < btns.length; i++) btns[i].classList.remove("active");
+        
+        document.getElementById(tabId).classList.add("active");
+        if (evt) evt.currentTarget.classList.add("active");
+        window.scrollTo(0,0);
+    };
+
+    window.openQuizTab = function(evt, lang) {
+        const targetAreaId = lang === 'jp' ? 'part3' : 'part4';
+        window.openTab(evt, targetAreaId);
+        initQuiz(lang);
+    };
+
+    // クイズ生成済みのフラグ
+    let jpQuizGenerated = false;
+    let enQuizGenerated = false;
+
+    function initQuiz(lang) {
+        if (lang === 'jp' && jpQuizGenerated) return;
+        if (lang === 'en' && enQuizGenerated) return;
+
+        const containerId = lang === 'jp' ? 'quiz-jp-container' : 'quiz-en-container';
+        const container = document.getElementById(containerId);
+        container.innerHTML = `<h2>${lang === 'jp' ? '3. 日本語テスト（全50問）' : '4. English History Quiz (50 Qs)'}</h2>`;
+        
+        quizData.forEach((item, idx) => {
+            const div = document.createElement('div');
+            div.className = 'quiz-item';
+            let qText = lang === 'jp' ? item.q : enQs[idx];
+            let optArr = lang === 'jp' ? [...item.a] : [...enAs[idx]];
+            let explanationText = lang === 'jp' ? item.e : enExps[idx];
+
+            div.innerHTML = `<p><strong>Q${idx + 1}: ${qText}</strong></p>`;
+            let options = optArr.map((text, i) => ({ text, isCorrect: i === 0 }));
+            shuffle(options);
+
+            options.forEach((opt) => {
+                const btn = document.createElement('button');
+                btn.className = 'option';
+                btn.innerText = opt.text;
+                btn.onclick = () => {
+                    const exp = div.querySelector('.explanation');
+                    exp.style.display = 'block';
+                    if(opt.isCorrect) { btn.classList.add('correct'); exp.innerText = (lang==='jp'?'正解！ ':'Correct! ') + explanationText; }
+                    else { btn.classList.add('incorrect'); exp.innerText = (lang==='jp'?'不正解... ':'Incorrect... ') + explanationText; }
+                };
+                div.appendChild(btn);
+            });
+            const expDiv = document.createElement('div');
+            expDiv.className = 'explanation';
+            div.appendChild(expDiv);
+            container.appendChild(div);
+        });
+
+        if (lang === 'jp') jpQuizGenerated = true;
+        if (lang === 'en') enQuizGenerated = true;
+    }
+</script>
+</body>
+</html>
